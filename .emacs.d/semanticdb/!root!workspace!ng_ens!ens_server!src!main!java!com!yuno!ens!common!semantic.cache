@@ -1,0 +1,21 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables (list 
+   (semanticdb-table "Paged.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.common" package nil nil [1 29])
+            ("java.util.List" include nil nil [32 54])
+            ("lombok.Data" include nil nil [55 74]))          
+    :file "Paged.java"
+    :pointmax 606
+    :fsize 605
+    :lastmodtime '(23521 2190 236337 103000)
+    :unmatched-syntax '((BRACE_BLOCK 104 . 605) (GT 102 . 103) (IDENTIFIER 101 . 102) (LT 100 . 101) (IDENTIFIER 76 . 81))
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

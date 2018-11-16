@@ -1,0 +1,114 @@
+;; Object order/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "order/"
+  :tables (list 
+   (semanticdb-table "CustomerOrderManagerImpl.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.services.order" package nil nil [1 37])
+            ("org.springframework.stereotype.Service" include nil nil [39 85])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [86 148])
+            ("com.yuno.ens.models.*" include nil nil [149 178])
+            ("com.yuno.ens.services.alipay.AliPayService" include nil nil [179 229])
+            ("com.alipay.api.AlipayApiException" include nil nil [231 272])
+            ("com.alipay.api.request.AlipayTradePayRequest" include nil nil [273 325])
+            ("com.alipay.api.response.AlipayTradePayResponse" include nil nil [326 380])
+            ("com.alipay.api.AlipayClient" include nil nil [381 416])
+            ("com.fasterxml.jackson.core.JsonProcessingException" include nil nil [418 476])
+            ("java.util.List" include nil nil [478 500])
+            ("java.math.BigDecimal" include nil nil [501 529])
+            ("com.alipay.api.domain.AlipayTradePayModel" include nil nil [531 580])
+            ("java.util.Date" include nil nil [582 604])
+            ("java.util.Optional" include nil nil [605 631])
+            ("java.text.SimpleDateFormat" include nil nil [632 666])
+            ("CustomerOrderManagerImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("CustomerOrderManager")
+                :members 
+                  ( ("alipayClient" variable
+                       (:typemodifiers ("private")
+                        :type "AlipayClient")
+                        (reparse-symbol class_member_declaration) [818 852])
+                    ("customerOrderRepository" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrderRepository")
+                        (reparse-symbol class_member_declaration) [873 929])
+                    ("customerOrderManifestRepository" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrderManifestRepository")
+                        (reparse-symbol class_member_declaration) [950 1022])
+                    ("refreshCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerOrder" variable (:type "CustomerOrder") (reparse-symbol formal_parameters) [1075 1102]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1042 1808])
+                    ("generateOutOrderNo" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerOrder" variable (:type "CustomerOrder") (reparse-symbol formal_parameters) [1861 1888]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1828 2502])
+                    ("aliPayCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerOrder" variable (:type "CustomerOrder") (reparse-symbol formal_parameters) [2551 2578])
+                            ("authCode" variable (:type "String") (reparse-symbol formal_parameters) [2580 2595]))                          
+                        :type "PaymentResponse")
+                        (reparse-symbol class_member_declaration) [2508 4471])
+                    ("othersPayCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerOrder" variable (:type "CustomerOrder") (reparse-symbol formal_parameters) [4523 4550]))                          
+                        :type "PaymentResponse")
+                        (reparse-symbol class_member_declaration) [4477 5110])
+                    ("payCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("paymentRequest" variable (:type "PaymentRequest") (reparse-symbol formal_parameters) [5170 5199]))                          
+                        :type "PaymentResponse")
+                        (reparse-symbol class_member_declaration) [5130 6153]))                  
+                :type "class")
+                nil [677 6157]))          
+    :file "CustomerOrderManagerImpl.java"
+    :pointmax 6158
+    :fsize 6157
+    :lastmodtime '(23499 19807 999120 247000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CustomerOrderManager.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.services.order" package nil nil [1 37])
+            ("com.yuno.ens.models.*" include nil nil [39 68])
+            ("CustomerOrderManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("refreshCustomerOrder" function
+                       (:arguments 
+                          ( ("customerOrder" variable (:type "CustomerOrder") (reparse-symbol formal_parameters) [140 167]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [114 169])
+                    ("generateOutOrderNo" function
+                       (:arguments 
+                          ( ("customerOrder" variable (:type "CustomerOrder") (reparse-symbol formal_parameters) [200 227]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [174 229])
+                    ("payCustomerOrder" function
+                       (:arguments 
+                          ( ("paymentRequest" variable (:type "PaymentRequest") (reparse-symbol formal_parameters) [267 296]))                          
+                        :type "PaymentResponse")
+                        (reparse-symbol interface_member_declaration) [234 298]))                  
+                :type "interface")
+                nil [70 300]))          
+    :file "CustomerOrderManager.java"
+    :pointmax 301
+    :fsize 300
+    :lastmodtime '(23499 19574 666925 412000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!services!order!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

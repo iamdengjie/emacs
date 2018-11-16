@@ -1,0 +1,52 @@
+;; Object controller/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "controller/"
+  :tables (list 
+   (semanticdb-table "BookController.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.jasmine.demo.controller" package nil nil [1 37])
+            ("com.jasmine.demo.entity.Book" include nil nil [39 75])
+            ("com.jasmine.demo.service.BookService" include nil nil [76 120])
+            ("lombok.extern.slf4j.Slf4j" include nil nil [121 154])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [155 217])
+            ("org.springframework.web.bind.annotation.GetMapping" include nil nil [218 276])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [277 337])
+            ("org.springframework.web.bind.annotation.PostMapping" include nil nil [338 397])
+            ("org.springframework.web.bind.annotation.RequestBody" include nil nil [398 457])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [458 520])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [521 583])
+            ("BookController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getAll" function (:constructor-flag t) (reparse-symbol class_member_declaration) [752 805])
+                    ("getOne" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "long") (reparse-symbol formal_parameters) [869 876]))                          
+                        :type "Book")
+                        (reparse-symbol class_member_declaration) [836 921])
+                    ("save" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "book") (reparse-symbol formal_parameters) [981 985]))                          
+                        :type "Book")
+                        (reparse-symbol class_member_declaration) [946 1033])
+                    ("batchSave" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "books") (reparse-symbol formal_parameters) [1126 1131]))                          )
+                        (reparse-symbol class_member_declaration) [1088 1185]))                  
+                :type "class")
+                nil [634 1187]))          
+    :file "BookController.java"
+    :pointmax 1188
+    :fsize 1187
+    :lastmodtime '(23498 59402 938597 929000)
+    :unmatched-syntax '((GT 1124 . 1125) (IDENTIFIER 1098 . 1110) (LT 1119 . 1120) (GT 1086 . 1087) (IDENTIFIER 1039 . 1051) (PUBLIC 1066 . 1072) (LT 1081 . 1082) (STRING_LITERAL 1052 . 1060) (STRING_LITERAL 823 . 830) (GT 750 . 751) (PUBLIC 730 . 736) (LT 745 . 746) (IDENTIFIER 669 . 679) (IDENTIFIER 696 . 707) (SEMICOLON 707 . 708) (PAREN_BLOCK 623 . 633) (IDENTIFIER 608 . 623) (IDENTIFIER 592 . 607) (IDENTIFIER 585 . 591) (GT 1795 . 1796) (IDENTIFIER 1769 . 1781) (LT 1790 . 1791) (GT 1757 . 1758) (IDENTIFIER 1710 . 1722) (PUBLIC 1737 . 1743) (LT 1752 . 1753) (STRING_LITERAL 1723 . 1731) (STRING_LITERAL 1494 . 1501) (IDENTIFIER 866 . 879) (PAREN_BLOCK 879 . 907) (GT 852 . 853) (COMMA 844 . 845) (IDENTIFIER 811 . 822) (PUBLIC 827 . 833) (LT 837 . 838) (GT 750 . 751) (PUBLIC 730 . 736) (LT 745 . 746) (IDENTIFIER 669 . 679) (IDENTIFIER 696 . 707) (SEMICOLON 707 . 708) (PAREN_BLOCK 623 . 633) (IDENTIFIER 608 . 623) (IDENTIFIER 592 . 607) (IDENTIFIER 585 . 591))
+    )
+   )
+  :file "!root!workspace!book-library!src!main!java!com!jasmine!demo!controller!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

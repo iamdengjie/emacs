@@ -1,0 +1,18 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables (list 
+         (semanticdb-table "CustomerOrder.java~"
+    :major-mode 'jdee-mode
+    :tags nil
+    :file "CustomerOrder.java~"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(23469 58038 361495 577000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

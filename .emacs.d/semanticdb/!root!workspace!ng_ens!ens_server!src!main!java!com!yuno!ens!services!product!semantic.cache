@@ -1,0 +1,109 @@
+;; Object product/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "product/"
+  :tables (list 
+   (semanticdb-table "StoreManifestManagerImpl.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.product" package nil nil [1 30])
+            ("java.util.ArrayList" include nil nil [32 59])
+            ("java.util.HashMap" include nil nil [60 85])
+            ("java.util.List" include nil nil [86 108])
+            ("java.util.Map" include nil nil [109 130])
+            ("java.util.Optional" include nil nil [131 157])
+            ("org.springframework.stereotype.Service" include nil nil [158 204])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [205 267])
+            ("java.math.BigInteger" include nil nil [268 296])
+            ("com.yuno.ens.models.*" include nil nil [298 327])
+            ("StoreManifestManagerImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("StoreManifestManager")
+                :members 
+                  ( ("loadStoreManifests" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("depId" variable (:type "Long") (reparse-symbol formal_parameters) [750 760]))                          )
+                        (reparse-symbol class_member_declaration) [731 1240])
+                    ("syncStoreManifestCategory" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("depId" variable (:type "Long") (reparse-symbol formal_parameters) [1298 1308]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1260 2432])
+                    ("syncStoreManifest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("depId" variable (:type "Long") (reparse-symbol formal_parameters) [2482 2492]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2452 3277]))                  
+                :type "class")
+                nil [338 3279]))          
+    :file "StoreManifestManagerImpl.java"
+    :pointmax 3280
+    :fsize 3279
+    :lastmodtime '(23497 44255 124826 337000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ProductManager.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.services.product" package nil nil [1 39])
+            ("ProductManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("importProductExcel" function
+                       (:arguments 
+                          ( ("excel" variable (:type "String") (reparse-symbol formal_parameters) [103 115]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [79 117]))                  
+                :type "interface")
+                nil [41 119]))          
+    :file "ProductManager.java"
+    :pointmax 120
+    :fsize 119
+    :lastmodtime '(23493 3951 162915 499000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ProductManagerImpl.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.services.product" package nil nil [1 39])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [41 92])
+            ("com.fasterxml.jackson.databind.DeserializationFeature" include nil nil [93 154])
+            ("org.springframework.stereotype.Service" include nil nil [156 202])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [203 265])
+            ("java.nio.file.Path" include nil nil [266 292])
+            ("java.util.List" include nil nil [294 316])
+            ("java.util.Map" include nil nil [317 338])
+            ("java.util.HashMap" include nil nil [339 364])
+            ("com.yuno.ens.utils.ExcelLoader" include nil nil [366 404])
+            ("com.yuno.ens.models.Product" include nil nil [405 440])
+            ("com.yuno.ens.models.ProductRepository" include nil nil [441 486])
+            ("org.hibernate.exception.ConstraintViolationException" include nil nil [579 639])
+            ("ProductManagerImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("ProductManager")
+                :members 
+                  ( ("excelLoader" variable
+                       (:typemodifiers ("private")
+                        :type "ExcelLoader")
+                        (reparse-symbol class_member_declaration) [730 762])
+                    ("importProductExcel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("excel" variable (:type "String") (reparse-symbol formal_parameters) [871 883]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [840 1995]))                  
+                :type "class")
+                nil [650 1997]))          
+    :file "ProductManagerImpl.java"
+    :pointmax 1998
+    :fsize 1997
+    :lastmodtime '(23493 5782 717194 91000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!services!product!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

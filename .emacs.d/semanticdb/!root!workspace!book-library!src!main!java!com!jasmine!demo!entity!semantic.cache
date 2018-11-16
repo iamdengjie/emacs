@@ -1,0 +1,67 @@
+;; Object entity/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entity/"
+  :tables (list 
+   (semanticdb-table "Book.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.jasmine.demo.entity" package nil nil [1 33])
+            ("com.fasterxml.jackson.annotation.JsonIgnoreProperties" include nil nil [35 96])
+            ("java.io.Serializable" include nil nil [97 125])
+            ("javax.persistence.Entity" include nil nil [126 158])
+            ("javax.persistence.GeneratedValue" include nil nil [159 199])
+            ("javax.persistence.GenerationType" include nil nil [200 240])
+            ("javax.persistence.Id" include nil nil [241 269])
+            ("javax.persistence.JoinColumn" include nil nil [270 306])
+            ("javax.persistence.ManyToOne" include nil nil [307 342])
+            ("javax.persistence.Table" include nil nil [343 374])
+            ("javax.persistence.Transient" include nil nil [375 410])
+            ("lombok.EqualsAndHashCode" include nil nil [411 443])
+            ("lombok.Getter" include nil nil [444 465])
+            ("lombok.Setter" include nil nil [466 487])
+            ("lombok.ToString" include nil nil [488 511])
+            ("Book" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [675 741])
+                    ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [801 817])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [821 841])
+                    ("author" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [845 867])
+                    ("price" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [871 892])
+                    ("publisher" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [896 921])
+                    ("borrower" variable
+                       (:typemodifiers ("private")
+                        :type "User")
+                        (reparse-symbol class_member_declaration) [1022 1044]))                  
+                :type "class")
+                nil [628 1046]))          
+    :file "Book.java"
+    :pointmax 1047
+    :fsize 1046
+    :lastmodtime '(23498 49472 438093 113000)
+    :unmatched-syntax '((BRACE_BLOCK 1009 . 1018) (EQ 977 . 978) (COMMA 966 . 967) (STRING_LITERAL 957 . 966) (IDENTIFIER 950 . 954) (EQ 955 . 956) (IDENTIFIER 761 . 769) (EQ 770 . 771) (PAREN_BLOCK 612 . 627) (IDENTIFIER 606 . 612) (IDENTIFIER 598 . 605) (PAREN_BLOCK 577 . 597) (IDENTIFIER 568 . 577) (PAREN_BLOCK 547 . 567) (IDENTIFIER 529 . 547) (IDENTIFIER 521 . 528) (IDENTIFIER 513 . 520))
+    )
+   )
+  :file "!root!workspace!book-library!src!main!java!com!jasmine!demo!entity!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

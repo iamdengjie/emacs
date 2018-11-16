@@ -1,0 +1,29 @@
+;; Object product/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "product/"
+  :tables (list 
+    (semanticdb-table "ProductService.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.product" package nil nil [1 38])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [40 91])
+            ("com.yuno.ens.common.AbstractPagingAndSortingService" include nil nil [92 151])
+            ("com.yuno.ens.entity.Product" include nil nil [152 187])
+            ("com.yuno.ens.util.ExcelLoader" include nil nil [188 225])
+            ("java.util.HashMap" include nil nil [226 251])
+            ("java.util.List" include nil nil [252 274])
+            ("java.util.Map" include nil nil [275 296])
+            ("org.hibernate.exception.ConstraintViolationException" include nil nil [297 357])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [358 420])
+            ("org.springframework.stereotype.Service" include nil nil [421 467]))          
+    :file "ProductService.java"
+    :pointmax 2000
+    :fsize 1999
+    :lastmodtime '(23521 2190 371755 78000)
+    :unmatched-syntax '((BRACE_BLOCK 555 . 1999) (GT 553 . 554) (IDENTIFIER 546 . 553) (LT 545 . 546) (IDENTIFIER 469 . 477))
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!feature!product!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

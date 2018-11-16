@@ -1,0 +1,83 @@
+;; Object engine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "engine/"
+  :tables (list 
+   (semanticdb-table "RestfulClient.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("ocpm.ep.engine" package nil nil [1 24])
+            ("java.io.BufferedReader" include nil nil [62 92])
+            ("java.io.IOException" include nil nil [93 120])
+            ("java.io.InputStreamReader" include nil nil [121 154])
+            ("java.io.OutputStream" include nil nil [155 183])
+            ("java.net.HttpURLConnection" include nil nil [184 218])
+            ("java.net.MalformedURLException" include nil nil [219 257])
+            ("java.net.URL" include nil nil [258 278])
+            ("org.springframework.stereotype.Component" include nil nil [280 328])
+            ("RestfulClient" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("SingletonHolder" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("INSTANCE" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "RestfulClient")
+                                (reparse-symbol class_member_declaration) [498 564]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [450 571])
+                    ("RestfulClient" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [577 603])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static" "final")
+                        :type "RestfulClient")
+                        (reparse-symbol class_member_declaration) [609 707])
+                    ("restFul" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("requestMethod" variable (:type "String") (reparse-symbol formal_parameters) [737 757])
+                            ("targetURL" variable (:type "String") (reparse-symbol formal_parameters) [758 774])
+                            ("input" variable (:type "String") (reparse-symbol formal_parameters) [775 787]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [714 3498])
+                    ("getRestful" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("targetURL" variable (:type "String") (reparse-symbol formal_parameters) [3529 3545]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3504 3667])
+                    ("postRestful" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("targetURL" variable (:type "String") (reparse-symbol formal_parameters) [3699 3715])
+                            ("input" variable (:type "String") (reparse-symbol formal_parameters) [3716 3728]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3673 3871])
+                    ("putRestful" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("targetURL" variable (:type "String") (reparse-symbol formal_parameters) [3902 3918])
+                            ("input" variable (:type "String") (reparse-symbol formal_parameters) [3919 3931]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3877 4072])
+                    ("deleteRestful" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("targetURL" variable (:type "String") (reparse-symbol formal_parameters) [4106 4122]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4078 4250]))                  
+                :type "class")
+                nil [341 4252]))          
+    :file "RestfulClient.java"
+    :pointmax 4253
+    :fsize 4252
+    :lastmodtime '(23507 60830 168568 851000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!EP!ep_server!src!main!java!ocpm!ep!engine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

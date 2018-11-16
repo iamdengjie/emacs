@@ -1,0 +1,391 @@
+;; Object entity/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entity/"
+  :tables (list 
+   (semanticdb-table "StoreManifestCategory.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("com.fasterxml.jackson.annotation.JsonIgnoreProperties" include nil nil [31 92])
+            ("java.util.Date" include nil nil [93 115])
+            ("javax.persistence.CascadeType" include nil nil [116 153])
+            ("javax.persistence.Column" include nil nil [154 186])
+            ("javax.persistence.Entity" include nil nil [187 219])
+            ("javax.persistence.FetchType" include nil nil [220 255])
+            ("javax.persistence.GeneratedValue" include nil nil [256 296])
+            ("javax.persistence.GenerationType" include nil nil [297 337])
+            ("javax.persistence.Id" include nil nil [338 366])
+            ("javax.persistence.JoinColumn" include nil nil [367 403])
+            ("javax.persistence.ManyToOne" include nil nil [404 439])
+            ("lombok.Data" include nil nil [440 459])
+            ("org.hibernate.annotations.CreationTimestamp" include nil nil [460 511])
+            ("org.hibernate.annotations.UpdateTimestamp" include nil nil [512 561])
+            ("StoreManifestCategory" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [676 692])
+                    ("createdDatetime" variable
+                       (:typemodifiers ("public")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [754 782])
+                    ("updatedDatetime" variable
+                       (:typemodifiers ("public")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [842 870])
+                    ("plms" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [874 894])
+                    ("count" variable
+                       (:typemodifiers ("private")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [900 922])
+                    ("department" variable
+                       (:typemodifiers ("private")
+                        :type "Department")
+                        (reparse-symbol class_member_declaration) [1096 1126]))                  
+                :type "class")
+                nil [577 1129]))          
+    :file "StoreManifestCategory.java"
+    :pointmax 1130
+    :fsize 1130
+    :lastmodtime '(23521 2190 237420 447000)
+    :unmatched-syntax '((STRING_LITERAL 1077 . 1092) (IDENTIFIER 1070 . 1074) (EQ 1075 . 1076) (IDENTIFIER 1026 . 1033) (EQ 1034 . 1035) (IDENTIFIER 1002 . 1007) (EQ 1008 . 1009) (BRACE_BLOCK 948 . 987) (STRING_LITERAL 820 . 838) (IDENTIFIER 813 . 817) (EQ 818 . 819) (STRING_LITERAL 732 . 750) (IDENTIFIER 725 . 729) (EQ 730 . 731) (IDENTIFIER 638 . 646) (EQ 647 . 648) (IDENTIFIER 569 . 576) (IDENTIFIER 563 . 568))
+    )
+   (semanticdb-table "Department.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("javax.persistence.CascadeType" include nil nil [31 68])
+            ("javax.persistence.Column" include nil nil [69 101])
+            ("javax.persistence.Entity" include nil nil [102 134])
+            ("javax.persistence.FetchType" include nil nil [135 170])
+            ("javax.persistence.GeneratedValue" include nil nil [171 211])
+            ("javax.persistence.GenerationType" include nil nil [212 252])
+            ("javax.persistence.Id" include nil nil [253 281])
+            ("javax.persistence.JoinColumn" include nil nil [282 318])
+            ("javax.persistence.ManyToOne" include nil nil [319 354])
+            ("javax.persistence.Enumerated" include nil nil [355 391])
+            ("javax.persistence.EnumType" include nil nil [392 426])
+            ("javax.validation.constraints.NotNull" include nil nil [427 471])
+            ("javax.validation.constraints.Size" include nil nil [472 513])
+            ("lombok.Data" include nil nil [514 533])
+            ("Department" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [637 653])
+                    ("code" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [711 731])
+                    ("name" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [765 785])
+                    ("address" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [808 831])
+                    ("parent" variable
+                       (:typemodifiers ("private")
+                        :type "Department")
+                        (reparse-symbol class_member_declaration) [937 963])
+                    ("type" variable
+                       (:typemodifiers ("private")
+                        :type "Type")
+                        (reparse-symbol class_member_declaration) [1000 1018])
+                    ("details" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1022 1045]))                  
+                :type "class")
+                nil [549 1099]))          
+    :file "Department.java"
+    :pointmax 1064
+    :fsize 1097
+    :lastmodtime '(23521 2190 237420 447000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CustomerOrder.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("java.math.BigDecimal" include nil nil [31 59])
+            ("java.util.Date" include nil nil [60 82])
+            ("javax.persistence.CascadeType" include nil nil [83 120])
+            ("javax.persistence.Column" include nil nil [121 153])
+            ("javax.persistence.Entity" include nil nil [154 186])
+            ("javax.persistence.EnumType" include nil nil [187 221])
+            ("javax.persistence.Enumerated" include nil nil [222 258])
+            ("javax.persistence.FetchType" include nil nil [259 294])
+            ("javax.persistence.GeneratedValue" include nil nil [295 335])
+            ("javax.persistence.GenerationType" include nil nil [336 376])
+            ("javax.persistence.Id" include nil nil [377 405])
+            ("javax.persistence.JoinColumn" include nil nil [406 442])
+            ("javax.persistence.ManyToOne" include nil nil [443 478])
+            ("lombok.Data" include nil nil [479 498])
+            ("org.hibernate.annotations.CreationTimestamp" include nil nil [499 550])
+            ("org.hibernate.annotations.UpdateTimestamp" include nil nil [551 600])
+            ("CustomerOrder" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [703 719])
+                    ("totalAmount" variable
+                       (:typemodifiers ("private")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [723 754])
+                    ("totalCount" variable
+                       (:typemodifiers ("private")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [758 785])
+                    ("paidAmount" variable
+                       (:typemodifiers ("private")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [789 819])
+                    ("payMethod" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [859 884])
+                    ("offlinePayMethod" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [921 953])
+                    ("payStatus" variable
+                       (:typemodifiers ("private")
+                        :type "PayStatus")
+                        (reparse-symbol class_member_declaration) [1022 1050])
+                    ("orderNo" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1098 1121])
+                    ("paidOrderNo" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1158 1185])
+                    ("paidAccount" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1219 1246])
+                    ("department" variable
+                       (:typemodifiers ("private")
+                        :type "Department")
+                        (reparse-symbol class_member_declaration) [1391 1421])
+                    ("createdDatetime" variable
+                       (:typemodifiers ("private")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [1520 1549])
+                    ("updatedDatetime" variable
+                       (:typemodifiers ("private")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [1609 1638])
+                    ("paidDatetime" variable
+                       (:typemodifiers ("private")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [1676 1702]))                  
+                :type "class")
+                nil [616 1800]))          
+    :file "CustomerOrder.java"
+    :pointmax 1801
+    :fsize 1800
+    :lastmodtime '(23533 15035 143258 311000)
+    :unmatched-syntax '((STRING_LITERAL 1657 . 1672) (IDENTIFIER 1650 . 1654) (EQ 1655 . 1656) (STRING_LITERAL 1568 . 1586) (IDENTIFIER 1561 . 1565) (EQ 1566 . 1567) (IDENTIFIER 1478 . 1487) (EQ 1488 . 1489) (EQ 1469 . 1470) (COMMA 1458 . 1459) (STRING_LITERAL 1440 . 1458) (IDENTIFIER 1433 . 1437) (EQ 1438 . 1439) (STRING_LITERAL 1372 . 1387) (IDENTIFIER 1365 . 1369) (EQ 1370 . 1371) (IDENTIFIER 1321 . 1328) (EQ 1329 . 1330) (IDENTIFIER 1296 . 1301) (EQ 1302 . 1303) (IDENTIFIER 669 . 677) (EQ 678 . 679) (IDENTIFIER 608 . 615) (IDENTIFIER 602 . 607) (STRING_LITERAL 1657 . 1672) (IDENTIFIER 1650 . 1654) (EQ 1655 . 1656) (STRING_LITERAL 1568 . 1586) (IDENTIFIER 1561 . 1565) (EQ 1566 . 1567) (IDENTIFIER 1478 . 1487) (EQ 1488 . 1489) (EQ 1469 . 1470) (COMMA 1458 . 1459) (STRING_LITERAL 1440 . 1458) (IDENTIFIER 1433 . 1437) (EQ 1438 . 1439) (STRING_LITERAL 1372 . 1387) (IDENTIFIER 1365 . 1369) (EQ 1370 . 1371) (IDENTIFIER 1321 . 1328) (EQ 1329 . 1330) (IDENTIFIER 1296 . 1301) (EQ 1302 . 1303) (IDENTIFIER 669 . 677) (EQ 678 . 679) (IDENTIFIER 608 . 615) (IDENTIFIER 602 . 607) (STRING_LITERAL 1657 . 1672) (IDENTIFIER 1650 . 1654) (EQ 1655 . 1656) (STRING_LITERAL 1568 . 1586) (IDENTIFIER 1561 . 1565) (EQ 1566 . 1567) (IDENTIFIER 1478 . 1487) (EQ 1488 . 1489) (EQ 1469 . 1470) (COMMA 1458 . 1459) (STRING_LITERAL 1440 . 1458) (IDENTIFIER 1433 . 1437) (EQ 1438 . 1439) (STRING_LITERAL 1372 . 1387) (IDENTIFIER 1365 . 1369) (EQ 1370 . 1371) (IDENTIFIER 1321 . 1328) (EQ 1329 . 1330) (IDENTIFIER 1296 . 1301) (EQ 1302 . 1303) (IDENTIFIER 669 . 677) (EQ 678 . 679) (IDENTIFIER 608 . 615) (IDENTIFIER 602 . 607) (STRING_LITERAL 1657 . 1672) (IDENTIFIER 1650 . 1654) (EQ 1655 . 1656) (STRING_LITERAL 1568 . 1586) (IDENTIFIER 1561 . 1565) (EQ 1566 . 1567) (IDENTIFIER 1478 . 1487) (EQ 1488 . 1489) (EQ 1469 . 1470) (COMMA 1458 . 1459) (STRING_LITERAL 1440 . 1458) (IDENTIFIER 1433 . 1437) (EQ 1438 . 1439) (STRING_LITERAL 1372 . 1387) (IDENTIFIER 1365 . 1369) (EQ 1370 . 1371) (IDENTIFIER 1321 . 1328) (EQ 1329 . 1330) (IDENTIFIER 1296 . 1301) (EQ 1302 . 1303) (IDENTIFIER 669 . 677) (EQ 678 . 679) (IDENTIFIER 608 . 615) (IDENTIFIER 602 . 607) (IDENTIFIER 608 . 615) (IDENTIFIER 602 . 607) (STRING_LITERAL 1657 . 1672) (IDENTIFIER 1650 . 1654) (EQ 1655 . 1656) (STRING_LITERAL 1568 . 1586) (IDENTIFIER 1561 . 1565) (EQ 1566 . 1567) (IDENTIFIER 1478 . 1487) (EQ 1488 . 1489) (EQ 1469 . 1470) (COMMA 1458 . 1459) (STRING_LITERAL 1440 . 1458) (IDENTIFIER 1433 . 1437) (EQ 1438 . 1439) (STRING_LITERAL 1372 . 1387) (IDENTIFIER 1365 . 1369) (EQ 1370 . 1371) (IDENTIFIER 1321 . 1328) (EQ 1329 . 1330) (IDENTIFIER 1296 . 1301) (EQ 1302 . 1303) (IDENTIFIER 669 . 677) (EQ 678 . 679) (IDENTIFIER 608 . 615) (IDENTIFIER 602 . 607))
+    )
+   (semanticdb-table "CustomerOrderManifest.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("java.math.BigDecimal" include nil nil [31 59])
+            ("javax.persistence.CascadeType" include nil nil [60 97])
+            ("javax.persistence.Column" include nil nil [98 130])
+            ("javax.persistence.Entity" include nil nil [131 163])
+            ("javax.persistence.FetchType" include nil nil [164 199])
+            ("javax.persistence.GeneratedValue" include nil nil [200 240])
+            ("javax.persistence.GenerationType" include nil nil [241 281])
+            ("javax.persistence.Id" include nil nil [282 310])
+            ("javax.persistence.JoinColumn" include nil nil [311 347])
+            ("javax.persistence.ManyToOne" include nil nil [348 383])
+            ("lombok.Data" include nil nil [384 403])
+            ("CustomerOrderManifest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [518 534])
+                    ("customerOrder" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrder")
+                        (reparse-symbol class_member_declaration) [648 684])
+                    ("storeManifest" variable
+                       (:typemodifiers ("private")
+                        :type "StoreManifest")
+                        (reparse-symbol class_member_declaration) [798 834])
+                    ("count" variable
+                       (:typemodifiers ("private")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [838 864])
+                    ("deleted" variable
+                       (:typemodifiers ("private")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [929 961])
+                    ("origPrice" variable
+                       (:typemodifiers ("private")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [965 1012])
+                    ("soldPrice" variable
+                       (:typemodifiers ("private")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [1016 1063]))                  
+                :type "class")
+                nil [419 1066]))          
+    :file "CustomerOrderManifest.java"
+    :pointmax 1067
+    :fsize 1066
+    :lastmodtime '(23521 2190 237420 447000)
+    :unmatched-syntax '((STRING_LITERAL 913 . 925) (IDENTIFIER 894 . 910) (EQ 911 . 912) (IDENTIFIER 876 . 884) (EQ 885 . 886) (STRING_LITERAL 775 . 794) (IDENTIFIER 768 . 772) (EQ 773 . 774) (IDENTIFIER 724 . 731) (EQ 732 . 733) (IDENTIFIER 699 . 704) (EQ 705 . 706) (STRING_LITERAL 625 . 644) (IDENTIFIER 618 . 622) (EQ 623 . 624) (IDENTIFIER 574 . 581) (EQ 582 . 583) (IDENTIFIER 549 . 554) (EQ 555 . 556) (IDENTIFIER 480 . 488) (EQ 489 . 490) (IDENTIFIER 411 . 418) (IDENTIFIER 405 . 410))
+    )
+   (semanticdb-table "StoreManifest.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("java.math.BigDecimal" include nil nil [31 59])
+            ("javax.persistence.CascadeType" include nil nil [60 97])
+            ("javax.persistence.Entity" include nil nil [98 130])
+            ("javax.persistence.FetchType" include nil nil [131 166])
+            ("javax.persistence.GeneratedValue" include nil nil [167 207])
+            ("javax.persistence.GenerationType" include nil nil [208 248])
+            ("javax.persistence.Id" include nil nil [249 277])
+            ("javax.persistence.JoinColumn" include nil nil [278 314])
+            ("javax.persistence.ManyToOne" include nil nil [315 350])
+            ("javax.persistence.Table" include nil nil [351 382])
+            ("javax.persistence.UniqueConstraint" include nil nil [383 425])
+            ("lombok.Data" include nil nil [426 445])
+            ("StoreManifest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [647 663])
+                    ("product" variable
+                       (:typemodifiers ("private")
+                        :type "Product")
+                        (reparse-symbol class_member_declaration) [770 794])
+                    ("department" variable
+                       (:typemodifiers ("private")
+                        :type "Department")
+                        (reparse-symbol class_member_declaration) [904 934])
+                    ("sellPrice" variable
+                       (:typemodifiers ("private")
+                        :type "BigDecimal")
+                        (reparse-symbol class_member_declaration) [938 967])
+                    ("stockCount" variable
+                       (:typemodifiers ("private")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [971 1000])
+                    ("shelfCount" variable
+                       (:typemodifiers ("private")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [1004 1033]))                  
+                :type "class")
+                nil [556 1036]))          
+    :file "StoreManifest.java"
+    :pointmax 1037
+    :fsize 1036
+    :lastmodtime '(23521 2190 237420 447000)
+    :unmatched-syntax '((STRING_LITERAL 885 . 900) (IDENTIFIER 878 . 882) (EQ 883 . 884) (IDENTIFIER 834 . 841) (EQ 842 . 843) (IDENTIFIER 809 . 814) (EQ 815 . 816) (STRING_LITERAL 754 . 766) (IDENTIFIER 747 . 751) (EQ 752 . 753) (IDENTIFIER 703 . 710) (EQ 711 . 712) (IDENTIFIER 678 . 683) (EQ 684 . 685) (IDENTIFIER 609 . 617) (EQ 618 . 619) (PAREN_BLOCK 467 . 555) (IDENTIFIER 461 . 467) (IDENTIFIER 453 . 460) (IDENTIFIER 447 . 452))
+    )
+   (semanticdb-table "PosStatus.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("javax.persistence.Entity" include nil nil [31 63])
+            ("javax.persistence.FetchType" include nil nil [64 99])
+            ("javax.persistence.GeneratedValue" include nil nil [100 140])
+            ("javax.persistence.GenerationType" include nil nil [141 181])
+            ("javax.persistence.Id" include nil nil [182 210])
+            ("javax.persistence.JoinColumn" include nil nil [211 247])
+            ("javax.persistence.ManyToOne" include nil nil [248 283])
+            ("lombok.Data" include nil nil [284 303])
+            ("org.hibernate.annotations.CreationTimestamp" include nil nil [304 355])
+            ("org.hibernate.annotations.UpdateTimestamp" include nil nil [356 405])
+            ("User" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [503 519])
+                    ("createdDatetime" variable
+                       (:typemodifiers ("private")
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [618 647])
+                    ("currentCustomerOrderId" variable
+                       (:typemodifiers ("private")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [651 687]))                  
+                :type "class")
+                nil [421 689]))          
+    :file "PosStatus.java"
+    :pointmax 690
+    :fsize 689
+    :lastmodtime '(23533 15729 941635 950000)
+    :unmatched-syntax '((IDENTIFIER 576 . 585) (EQ 586 . 587) (EQ 567 . 568) (COMMA 556 . 557) (STRING_LITERAL 538 . 556) (IDENTIFIER 531 . 535) (EQ 536 . 537) (IDENTIFIER 465 . 473) (EQ 474 . 475) (IDENTIFIER 413 . 420) (IDENTIFIER 407 . 412) (STRING_LITERAL 666 . 684) (IDENTIFIER 659 . 663) (EQ 664 . 665) (IDENTIFIER 576 . 585) (EQ 586 . 587) (EQ 567 . 568) (COMMA 556 . 557) (STRING_LITERAL 538 . 556) (IDENTIFIER 531 . 535) (EQ 536 . 537) (IDENTIFIER 465 . 473) (EQ 474 . 475) (IDENTIFIER 413 . 420) (IDENTIFIER 407 . 412) (STRING_LITERAL 755 . 778) (IDENTIFIER 748 . 752) (EQ 753 . 754) (STRING_LITERAL 666 . 684) (IDENTIFIER 659 . 663) (EQ 664 . 665) (IDENTIFIER 576 . 585) (EQ 586 . 587) (EQ 567 . 568) (COMMA 556 . 557) (STRING_LITERAL 538 . 556) (IDENTIFIER 531 . 535) (EQ 536 . 537) (IDENTIFIER 465 . 473) (EQ 474 . 475) (IDENTIFIER 413 . 420) (IDENTIFIER 407 . 412))
+    )
+   (semanticdb-table "User.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.entity" package nil nil [1 29])
+            ("javax.persistence.Entity" include nil nil [31 63])
+            ("javax.persistence.FetchType" include nil nil [64 99])
+            ("javax.persistence.GeneratedValue" include nil nil [100 140])
+            ("javax.persistence.GenerationType" include nil nil [141 181])
+            ("javax.persistence.Id" include nil nil [182 210])
+            ("javax.persistence.JoinColumn" include nil nil [211 247])
+            ("javax.persistence.ManyToOne" include nil nil [248 283])
+            ("lombok.Data" include nil nil [284 303])
+            ("User" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [401 417])
+                    ("username" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [421 445])
+                    ("email" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [449 470])
+                    ("password" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [474 498])
+                    ("department" variable
+                       (:typemodifiers ("private")
+                        :type "Department")
+                        (reparse-symbol class_member_declaration) [577 607]))                  
+                :type "class")
+                nil [319 610]))          
+    :file "User.java"
+    :pointmax 611
+    :fsize 610
+    :lastmodtime '(23533 13247 380222 376000)
+    :unmatched-syntax '((STRING_LITERAL 558 . 573) (IDENTIFIER 551 . 555) (EQ 556 . 557) (IDENTIFIER 513 . 518) (EQ 519 . 520) (IDENTIFIER 363 . 371) (EQ 372 . 373) (IDENTIFIER 311 . 318) (IDENTIFIER 305 . 310) (STRING_LITERAL 558 . 573) (IDENTIFIER 551 . 555) (EQ 556 . 557) (IDENTIFIER 513 . 518) (EQ 519 . 520) (IDENTIFIER 363 . 371) (EQ 372 . 373) (IDENTIFIER 311 . 318) (IDENTIFIER 305 . 310) (STRING_LITERAL 558 . 573) (IDENTIFIER 551 . 555) (EQ 556 . 557) (IDENTIFIER 513 . 518) (EQ 519 . 520) (IDENTIFIER 363 . 371) (EQ 372 . 373) (IDENTIFIER 311 . 318) (IDENTIFIER 305 . 310))
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!entity!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

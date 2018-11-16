@@ -1,0 +1,65 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "WebSecurityConfig.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.config" package nil nil [1 29])
+            ("java.util.Arrays" include nil nil [31 55])
+            ("org.springframework.context.annotation.Bean" include nil nil [56 107])
+            ("org.springframework.context.annotation.Configuration" include nil nil [108 168])
+            ("org.springframework.http.HttpMethod" include nil nil [169 212])
+            ("org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" include nil nil [213 320])
+            ("org.springframework.security.config.annotation.web.builders.HttpSecurity" include nil nil [321 401])
+            ("org.springframework.security.config.annotation.web.configuration.EnableWebSecurity" include nil nil [402 492])
+            ("org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" include nil nil [493 594])
+            ("org.springframework.security.crypto.password.NoOpPasswordEncoder" include nil nil [595 667])
+            ("org.springframework.security.web.savedrequest.NullRequestCache" include nil nil [668 738])
+            ("org.springframework.session.web.http.CookieSerializer" include nil nil [739 800])
+            ("org.springframework.session.web.http.DefaultCookieSerializer" include nil nil [801 869])
+            ("org.springframework.session.web.http.HeaderHttpSessionIdResolver" include nil nil [870 942])
+            ("org.springframework.session.web.http.HttpSessionIdResolver" include nil nil [943 1009])
+            ("org.springframework.web.cors.CorsConfiguration" include nil nil [1010 1064])
+            ("org.springframework.web.cors.CorsConfigurationSource" include nil nil [1065 1125])
+            ("org.springframework.web.cors.UrlBasedCorsConfigurationSource" include nil nil [1126 1194])
+            ("WebSecurityConfig" type
+               (:typemodifiers ("public")
+                :superclasses "WebSecurityConfigurerAdapter"
+                :members 
+                  ( ("cookieSerializer" function
+                       (:typemodifiers ("public")
+                        :type "CookieSerializer")
+                        (reparse-symbol class_member_declaration) [1311 1597])
+                    ("httpSessionIdResolver" function
+                       (:typemodifiers ("public")
+                        :type "HttpSessionIdResolver")
+                        (reparse-symbol class_member_declaration) [1609 1727])
+                    ("corsConfigurationSource" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1763 2621])
+                    ("configure" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("http" variable (:type "HttpSecurity") (reparse-symbol formal_parameters) [2662 2679]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2637 3623])
+                    ("configure" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("auth" variable (:type "AuthenticationManagerBuilder") (reparse-symbol formal_parameters) [3932 3965]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3907 4195]))                  
+                :type "class")
+                nil [1230 4197]))          
+    :file "WebSecurityConfig.java"
+    :pointmax 4613
+    :fsize 4197
+    :lastmodtime '(23521 2694 147213 361000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,122 @@
+;; Object web/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "web/"
+  :tables (list 
+   (semanticdb-table "urls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.conf.urls" include nil nil [1 52])
+            ("web.views" include nil nil [54 77])
+            ("urlpatterns" variable nil nil [79 310]))          
+    :file "urls.py"
+    :pointmax 311
+    :fsize 310
+    :lastmodtime '(23511 61840 85998 519000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.shortcuts" include nil nil [25 60])
+            ("django.views.generic" include nil nil [61 122])
+            ("django.views.decorators.csrf" include nil nil [123 175])
+            ("django.utils.decorators" include nil nil [176 228])
+            ("ScefDashboardView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [308 321])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [339 343])
+                            ("request" variable nil (reparse-symbol function_parameters) [345 352])
+                            ("args" variable nil (reparse-symbol function_parameters) [354 359])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [361 369]))                          )
+                        (reparse-symbol indented_block_body) [326 453])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [466 470])
+                            ("request" variable nil (reparse-symbol function_parameters) [472 479])
+                            ("args" variable nil (reparse-symbol function_parameters) [481 486])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [488 496]))                          )
+                        (reparse-symbol indented_block_body) [458 598]))                  
+                :type "class")
+                nil [256 598])
+            ("EpDemoView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [670 683])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [701 705])
+                            ("request" variable nil (reparse-symbol function_parameters) [707 714])
+                            ("args" variable nil (reparse-symbol function_parameters) [716 721])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [723 731]))                          )
+                        (reparse-symbol indented_block_body) [688 808])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [821 825])
+                            ("request" variable nil (reparse-symbol function_parameters) [827 834])
+                            ("args" variable nil (reparse-symbol function_parameters) [836 841])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [843 851]))                          )
+                        (reparse-symbol indented_block_body) [813 955]))                  
+                :type "class")
+                nil [625 955])
+            ("EpDemo4View" type
+               (:superclasses ("View")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [1002 1015])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1033 1037])
+                            ("request" variable nil (reparse-symbol function_parameters) [1039 1046])
+                            ("args" variable nil (reparse-symbol function_parameters) [1048 1053])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1055 1063]))                          )
+                        (reparse-symbol indented_block_body) [1020 1141])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1154 1158])
+                            ("request" variable nil (reparse-symbol function_parameters) [1160 1167])
+                            ("args" variable nil (reparse-symbol function_parameters) [1169 1174])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1176 1184]))                          )
+                        (reparse-symbol indented_block_body) [1146 1290]))                  
+                :type "class")
+                nil [956 1290])
+            ("UserDashboardView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [1343 1356])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1374 1378])
+                            ("request" variable nil (reparse-symbol function_parameters) [1380 1387])
+                            ("args" variable nil (reparse-symbol function_parameters) [1389 1394])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1396 1404]))                          )
+                        (reparse-symbol indented_block_body) [1361 1488])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1501 1505])
+                            ("request" variable nil (reparse-symbol function_parameters) [1507 1514])
+                            ("args" variable nil (reparse-symbol function_parameters) [1516 1521])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1523 1531]))                          )
+                        (reparse-symbol indented_block_body) [1493 1642]))                  
+                :type "class")
+                nil [1291 1642]))          
+    :file "views.py"
+    :pointmax 1642
+    :fsize 1641
+    :lastmodtime '(23511 60147 84440 127000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ep_demo!web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

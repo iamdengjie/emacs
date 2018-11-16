@@ -1,0 +1,235 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables (list 
+   (semanticdb-table "PolicyContext.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("ocpm.ep.models" package nil nil [1 24])
+            ("java.util.*" include nil nil [26 45])
+            ("java.util.ArrayList" include nil nil [46 73])
+            ("javax.annotation.PostConstruct" include nil nil [74 112])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [114 165])
+            ("com.fasterxml.jackson.databind.node.ArrayNode" include nil nil [166 219])
+            ("com.jayway.jsonpath.JsonPath" include nil nil [220 256])
+            ("com.jayway.jsonpath.PathNotFoundException" include nil nil [257 306])
+            ("org.slf4j.Logger" include nil nil [307 331])
+            ("org.slf4j.LoggerFactory" include nil nil [332 363])
+            ("ocpm.ep.mybatis.domain.RestfulConfig" include nil nil [364 408])
+            ("org.springframework.util.StringUtils" include nil nil [409 453])
+            ("org.apache.commons.lang3.ArrayUtils" include nil nil [454 497])
+            ("ocpm.ep.services.GlobalConfig" include nil nil [498 535])
+            ("PolicyContext" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [571 653])
+                    ("callingPartyField" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [659 692])
+                    ("calledPartyField" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [697 729])
+                    ("callingPartyKeyword" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [734 769])
+                    ("calledPartyKeyword" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [774 808])
+                    ("queryLdap" variable
+                       (:typemodifiers ("private")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [813 839])
+                    ("targetLdapName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [845 882])
+                    ("callingPartyProfile" variable
+                       (:typemodifiers ("private")
+                        :type "UserProfile")
+                        (reparse-symbol class_member_declaration) [888 928])
+                    ("calledPartyProfile" variable
+                       (:typemodifiers ("private")
+                        :type "UserProfile")
+                        (reparse-symbol class_member_declaration) [933 972])
+                    ("init" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("globalConfig" variable (:type "GlobalConfig") (reparse-symbol formal_parameters) [1489 1514])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [1520 1526])
+                            ("" variable (:type "request") (reparse-symbol formal_parameters) [1536 1543]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1472 2895])
+                    ("setJsonContentPath" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("path" variable (:type "String") (reparse-symbol formal_parameters) [2932 2943])
+                            ("val" variable (:type "Object") (reparse-symbol formal_parameters) [2945 2955]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2901 7176])
+                    ("setJsonContent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [7209 7219])
+                            ("val" variable (:type "Object") (reparse-symbol formal_parameters) [7221 7231]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7182 7268])
+                    ("setCallingPartyProfile" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("userProfile" variable (:type "UserProfile") (reparse-symbol formal_parameters) [7309 7332]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7274 7382])
+                    ("getCallingPartyProfile" function
+                       (:typemodifiers ("public")
+                        :type "UserProfile")
+                        (reparse-symbol class_member_declaration) [7388 7468])
+                    ("setCalledPartyProfile" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("userProfile" variable (:type "UserProfile") (reparse-symbol formal_parameters) [7508 7531]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7474 7580])
+                    ("getCalledPartyProfile" function
+                       (:typemodifiers ("public")
+                        :type "UserProfile")
+                        (reparse-symbol class_member_declaration) [7586 7664])
+                    ("setTargetLdapName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("targetLdapName" variable (:type "String") (reparse-symbol formal_parameters) [7700 7721]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7670 7769])
+                    ("getTargetLdapName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7775 7840])
+                    ("setCallingPartyField" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("callingPartyField" variable (:type "String") (reparse-symbol formal_parameters) [7879 7903]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7846 7957])
+                    ("getCallingPartyField" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7963 8034])
+                    ("setCalledPartyField" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("calledPartyField" variable (:type "String") (reparse-symbol formal_parameters) [8072 8095]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8040 8147])
+                    ("getCalledPartyField" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8153 8222])
+                    ("setCallingPartyKeyword" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("callingPartyKeyword" variable (:type "String") (reparse-symbol formal_parameters) [8263 8289]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8228 8347])
+                    ("getCallingPartyKeyword" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8353 8428])
+                    ("setCalledPartyKeyword" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("calledPartyKeyword" variable (:type "String") (reparse-symbol formal_parameters) [8468 8493]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8434 8549])
+                    ("getCalledPartyKeyword" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8555 8628])
+                    ("getQueryLdap" function
+                       (:typemodifiers ("public")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [8634 8690])
+                    ("setQueryLdap" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("queryLdap" variable (:type "Boolean") (reparse-symbol formal_parameters) [8721 8738]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8696 8776])
+                    ("getJsonContent" function (:constructor-flag t) (reparse-symbol class_member_declaration) [8809 8854])
+                    ("setUserProfileData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("target" variable (:type "String") (reparse-symbol formal_parameters) [8891 8904])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [8910 8916])
+                            ("" variable (:type "userProfileData") (reparse-symbol formal_parameters) [8932 8947]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8860 9075])
+                    ("getUserProfileData" function (:constructor-flag t) (reparse-symbol class_member_declaration) [9108 9161])
+                    ("setRequestData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [9198 9204])
+                            ("" variable (:type "requestData") (reparse-symbol formal_parameters) [9214 9225]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9167 9267])
+                    ("getRequestData" function (:constructor-flag t) (reparse-symbol class_member_declaration) [9300 9388])
+                    ("setResponseData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [9426 9432])
+                            ("" variable (:type "responseData") (reparse-symbol formal_parameters) [9442 9454]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9394 9498])
+                    ("getResponseData" function (:constructor-flag t) (reparse-symbol class_member_declaration) [9531 9628])
+                    ("setConfigData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [9660 9670])
+                            ("val" variable (:type "Object") (reparse-symbol formal_parameters) [9672 9682]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9634 9766])
+                    ("getConfigData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [9800 9810]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [9772 9990])
+                    ("setActionData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [10026 10032])
+                            ("" variable (:type "actionData") (reparse-symbol formal_parameters) [10042 10052]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9996 10092])
+                    ("getActionData" function (:constructor-flag t) (reparse-symbol class_member_declaration) [10125 10168])
+                    ("getRestfulConfig" function (:constructor-flag t) (reparse-symbol class_member_declaration) [10201 10250])
+                    ("setRestfulConfig" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "restfulConfig") (reparse-symbol formal_parameters) [10305 10318]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10256 10364])
+                    ("parseValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("value" variable (:type "String") (reparse-symbol formal_parameters) [10395 10407]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10370 11465]))                  
+                :type "class")
+                nil [538 11472]))          
+    :file "PolicyContext.java"
+    :pointmax 11473
+    :fsize 11472
+    :lastmodtime '(23504 34503 977788 137000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!EP!ep_server!src!main!java!ocpm!ep!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,69 @@
+;; Object configs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "configs/"
+  :tables (list 
+   (semanticdb-table "WebSecurityConfig.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.configs" package nil nil [1 30])
+            ("org.springframework.context.annotation.Bean" include nil nil [32 83])
+            ("org.springframework.context.annotation.Configuration" include nil nil [84 144])
+            ("org.springframework.security.config.annotation.web.builders.HttpSecurity" include nil nil [145 225])
+            ("org.springframework.security.config.annotation.web.configuration.EnableWebSecurity" include nil nil [226 316])
+            ("org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" include nil nil [317 418])
+            ("org.springframework.security.core.userdetails.User" include nil nil [419 477])
+            ("org.springframework.security.core.userdetails.UserDetails" include nil nil [478 543])
+            ("org.springframework.security.core.userdetails.UserDetailsService" include nil nil [544 616])
+            ("org.springframework.security.provisioning.InMemoryUserDetailsManager" include nil nil [617 693])
+            ("org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" include nil nil [694 801])
+            ("org.springframework.security.crypto.password.NoOpPasswordEncoder" include nil nil [802 874])
+            ("org.springframework.security.web.savedrequest.NullRequestCache" include nil nil [875 945])
+            ("org.springframework.session.web.http.HttpSessionIdResolver" include nil nil [947 1013])
+            ("org.springframework.session.web.http.HeaderHttpSessionIdResolver" include nil nil [1014 1086])
+            ("org.springframework.web.cors.CorsConfigurationSource" include nil nil [1088 1148])
+            ("org.springframework.web.cors.CorsConfiguration" include nil nil [1149 1203])
+            ("org.springframework.web.cors.UrlBasedCorsConfigurationSource" include nil nil [1204 1272])
+            ("org.springframework.http.HttpMethod" include nil nil [1274 1317])
+            ("org.springframework.session.web.http.CookieSerializer" include nil nil [1318 1379])
+            ("org.springframework.session.web.http.DefaultCookieSerializer" include nil nil [1380 1448])
+            ("java.util.Arrays" include nil nil [1450 1474])
+            ("WebSecurityConfig" type
+               (:typemodifiers ("public")
+                :superclasses "WebSecurityConfigurerAdapter"
+                :members 
+                  ( ("cookieSerializer" function
+                       (:typemodifiers ("public")
+                        :type "CookieSerializer")
+                        (reparse-symbol class_member_declaration) [1591 1877])
+                    ("httpSessionIdResolver" function
+                       (:typemodifiers ("public")
+                        :type "HttpSessionIdResolver")
+                        (reparse-symbol class_member_declaration) [1889 2007])
+                    ("corsConfigurationSource" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2043 2901])
+                    ("configure" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("http" variable (:type "HttpSecurity") (reparse-symbol formal_parameters) [2942 2959]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2917 3810])
+                    ("configure" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("auth" variable (:type "AuthenticationManagerBuilder") (reparse-symbol formal_parameters) [4119 4152]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4094 4382]))                  
+                :type "class")
+                nil [1510 4384]))          
+    :file "WebSecurityConfig.java"
+    :pointmax 4368
+    :fsize 4384
+    :lastmodtime '(23507 537 228464 382000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!configs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

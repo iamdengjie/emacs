@@ -1,0 +1,63 @@
+;; Object ep/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ep/"
+  :tables (list 
+   (semanticdb-table "WebSecurityConfig.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.ep" package nil nil [1 16])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [18 80])
+            ("org.springframework.context.annotation.Bean" include nil nil [81 132])
+            ("org.springframework.context.annotation.Configuration" include nil nil [133 193])
+            ("org.springframework.security.authentication.dao.DaoAuthenticationProvider" include nil nil [194 275])
+            ("org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder" include nil nil [276 383])
+            ("org.springframework.security.config.annotation.web.builders.HttpSecurity" include nil nil [384 464])
+            ("org.springframework.security.config.annotation.web.builders.WebSecurity" include nil nil [465 544])
+            ("org.springframework.security.config.annotation.web.configuration.EnableWebSecurity" include nil nil [545 635])
+            ("org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter" include nil nil [636 737])
+            ("org.springframework.security.core.userdetails.UserDetailsService" include nil nil [738 810])
+            ("org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" include nil nil [811 883])
+            ("com.ep.gui.service.UserService" include nil nil [885 923])
+            ("org.springframework.security.crypto.password.NoOpPasswordEncoder" include nil nil [924 996])
+            ("WebSecurityConfig" type
+               (:typemodifiers ("public")
+                :superclasses "WebSecurityConfigurerAdapter"
+                :members 
+                  ( ("configureGlobal" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("auth" variable (:type "AuthenticationManagerBuilder") (reparse-symbol formal_parameters) [1194 1227]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1166 1480])
+                    ("configure" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("http" variable (:type "HttpSecurity") (reparse-symbol formal_parameters) [1525 1542]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1500 2054])
+                    ("configure" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("web" variable (:type "WebSecurity") (reparse-symbol formal_parameters) [2100 2115]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2078 2233])
+                    ("passwordEncoder" function
+                       (:typemodifiers ("public")
+                        :type "BCryptPasswordEncoder")
+                        (reparse-symbol class_member_declaration) [2249 2347]))                  
+                :type "class")
+                nil [1032 2351]))          
+    :file "WebSecurityConfig.java"
+    :pointmax 2299
+    :fsize 2375
+    :lastmodtime '(23511 65404 114066 784000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!EP!ep_gui!src!main!java!com!ep!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

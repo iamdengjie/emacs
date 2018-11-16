@@ -1,0 +1,492 @@
+;; Object customer_order/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "customer_order/"
+  :tables (list 
+   (semanticdb-table "CustomerOrderController.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [114 158])
+            ("com.alipay.api.AlipayApiException" include nil nil [160 201])
+            ("com.yuno.ens.common.Paged" include nil nil [202 235])
+            ("com.yuno.ens.entity.CustomerOrder" include nil nil [236 277])
+            ("com.yuno.ens.entity.CustomerOrder.PayStatus" include nil nil [278 329])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [330 392])
+            ("org.springframework.data.domain.PageRequest" include nil nil [393 444])
+            ("org.springframework.data.domain.Sort" include nil nil [445 489])
+            ("org.springframework.web.bind.annotation.DeleteMapping" include nil nil [490 551])
+            ("org.springframework.web.bind.annotation.GetMapping" include nil nil [552 610])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [611 671])
+            ("org.springframework.web.bind.annotation.PostMapping" include nil nil [672 731])
+            ("org.springframework.web.bind.annotation.PutMapping" include nil nil [732 790])
+            ("org.springframework.web.bind.annotation.RequestBody" include nil nil [791 850])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [851 913])
+            ("org.springframework.web.bind.annotation.RequestParam" include nil nil [914 974])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [975 1037])
+            ("CustomerOrderController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getPagedCustomerOrders" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "int") (reparse-symbol formal_parameters) [1315 1325])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [1384 1396]))                          )
+                        (reparse-symbol class_member_declaration) [1234 1619])
+                    ("getCustomerOrdersByPayStatus" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "int") (reparse-symbol formal_parameters) [1778 1788])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [1847 1859])
+                            ("" variable (:type "payStatus") (reparse-symbol formal_parameters) [1891 1900]))                          )
+                        (reparse-symbol class_member_declaration) [1691 2145])
+                    ("addCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "customerOrder") (reparse-symbol formal_parameters) [2229 2242]))                          
+                        :type "CustomerOrder")
+                        (reparse-symbol class_member_declaration) [2164 2445])
+                    ("updCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "id") (reparse-symbol formal_parameters) [2529 2531])
+                            ("" variable (:type "customerOrder") (reparse-symbol formal_parameters) [2566 2579]))                          
+                        :type "CustomerOrder")
+                        (reparse-symbol class_member_declaration) [2472 2782])
+                    ("delCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "long") (reparse-symbol formal_parameters) [2855 2862]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2812 2910])
+                    ("payCustomerOrder" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "request") (reparse-symbol formal_parameters) [3023 3030]))                          
+                        :type "PayCustomerOrderResponse")
+                        (reparse-symbol class_member_declaration) [2937 3128]))                  
+                :type "class")
+                nil [1091 3131]))          
+    :file "CustomerOrderController.java"
+    :pointmax 3132
+    :fsize 3131
+    :lastmodtime '(23533 23925 878801 399000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CustomerOrderRepository.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.yuno.ens.entity.CustomerOrder" include nil nil [47 88])
+            ("com.yuno.ens.entity.CustomerOrder.PayStatus" include nil nil [89 140])
+            ("org.springframework.data.domain.Page" include nil nil [141 185])
+            ("org.springframework.data.domain.Pageable" include nil nil [186 234])
+            ("org.springframework.data.repository.PagingAndSortingRepository" include nil nil [235 305])
+            ("java.util.List" include nil nil [306 328]))          
+    :file "CustomerOrderRepository.java"
+    :pointmax 556
+    :fsize 555
+    :lastmodtime '(23533 24728 252368 653000)
+    :unmatched-syntax '((BRACE_BLOCK 427 . 555) (GT 425 . 426) (IDENTIFIER 421 . 425) (COMMA 419 . 420) (IDENTIFIER 406 . 419) (PUBLIC 330 . 336) (LT 405 . 406) (BRACE_BLOCK 427 . 597) (GT 425 . 426) (IDENTIFIER 421 . 425) (COMMA 419 . 420) (IDENTIFIER 406 . 419) (PUBLIC 330 . 336) (LT 405 . 406) (BRACE_BLOCK 423 . 593) (GT 421 . 422) (IDENTIFIER 417 . 421) (COMMA 415 . 416) (IDENTIFIER 402 . 415) (IMPORT 306 . 312) (PUBLIC 326 . 332) (LT 401 . 402) (BRACE_BLOCK 422 . 592) (GT 420 . 421) (IDENTIFIER 416 . 420) (COMMA 414 . 415) (IDENTIFIER 401 . 414) (IMPORT 306 . 312) (PUBLIC 325 . 331) (LT 400 . 401) (BRACE_BLOCK 421 . 591) (GT 419 . 420) (IDENTIFIER 415 . 419) (COMMA 413 . 414) (IDENTIFIER 400 . 413) (IMPORT 306 . 312) (PUBLIC 324 . 330) (LT 399 . 400) (BRACE_BLOCK 422 . 592) (GT 420 . 421) (IDENTIFIER 416 . 420) (COMMA 414 . 415) (IDENTIFIER 401 . 414) (IMPORT 306 . 312) (PUBLIC 325 . 331) (LT 400 . 401) (BRACE_BLOCK 405 . 575) (GT 403 . 404) (IDENTIFIER 399 . 403) (COMMA 397 . 398) (IDENTIFIER 384 . 397) (PUBLIC 308 . 314) (LT 383 . 384) (BRACE_BLOCK 404 . 574) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 573) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 575) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 574) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 575) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 576) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 577) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 588) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 590) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 598) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 600) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 532) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 541) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 539) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 535) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 533) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 532) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 582) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 577) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 569) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 567) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 569) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383) (BRACE_BLOCK 404 . 567) (GT 402 . 403) (IDENTIFIER 398 . 402) (COMMA 396 . 397) (IDENTIFIER 383 . 396) (PUBLIC 307 . 313) (LT 382 . 383))
+    )
+   (semanticdb-table "CustomerOrderManifestRepository.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.yuno.ens.entity.CustomerOrderManifest" include nil nil [47 96])
+            ("java.util.List" include nil nil [97 119])
+            ("org.springframework.data.domain.Pageable" include nil nil [120 168])
+            ("org.springframework.data.repository.PagingAndSortingRepository" include nil nil [169 239]))          
+    :file "CustomerOrderManifestRepository.java"
+    :pointmax 549
+    :fsize 548
+    :lastmodtime '(23533 24722 550635 19000)
+    :unmatched-syntax '((BRACE_BLOCK 358 . 548) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 549) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 619) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 620) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 617) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 617) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 616) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 615) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 613) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 611) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 609) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 608) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 607) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 606) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 605) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 600) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 592) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 591) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 590) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 590) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 588) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 585) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 584) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 580) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 579) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 580) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 579) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 574) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 566) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 561) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 554) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 553) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 551) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 549) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 549) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 613) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 613) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 605) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 604) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 603) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 599) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 549) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329) (BRACE_BLOCK 358 . 547) (GT 356 . 357) (IDENTIFIER 352 . 356) (COMMA 350 . 351) (IDENTIFIER 329 . 350) (PUBLIC 241 . 247) (LT 328 . 329))
+    )
+   (semanticdb-table "CustomerOrderManifestController.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.yuno.ens.common.Paged" include nil nil [47 80])
+            ("com.yuno.ens.entity.CustomerOrder" include nil nil [81 122])
+            ("com.yuno.ens.entity.CustomerOrderManifest" include nil nil [123 172])
+            ("com.yuno.ens.entity.StoreManifest" include nil nil [173 214])
+            ("com.yuno.ens.entity.Product" include nil nil [215 250])
+            ("com.yuno.ens.feature.store_manifest.StoreManifestService" include nil nil [251 315])
+            ("java.math.BigDecimal" include nil nil [316 344])
+            ("java.util.HashSet" include nil nil [345 370])
+            ("java.util.List" include nil nil [371 393])
+            ("java.util.Map" include nil nil [394 415])
+            ("java.util.HashMap" include nil nil [416 441])
+            ("java.util.Set" include nil nil [442 463])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [464 526])
+            ("org.springframework.data.domain.PageRequest" include nil nil [527 578])
+            ("org.springframework.data.domain.Sort" include nil nil [579 623])
+            ("org.springframework.web.bind.annotation.DeleteMapping" include nil nil [624 685])
+            ("org.springframework.web.bind.annotation.GetMapping" include nil nil [686 744])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [745 805])
+            ("org.springframework.web.bind.annotation.PostMapping" include nil nil [806 865])
+            ("org.springframework.web.bind.annotation.PutMapping" include nil nil [866 924])
+            ("org.springframework.web.bind.annotation.RequestBody" include nil nil [925 984])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [985 1047])
+            ("org.springframework.web.bind.annotation.RequestParam" include nil nil [1048 1108])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [1109 1171])
+            ("CustomerOrderManifestController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "customerOrderManifest") (reparse-symbol formal_parameters) [1558 1579]))                          
+                        :type "CustomerOrderManifest")
+                        (reparse-symbol class_member_declaration) [1490 1654])
+                    ("batchAdd" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "customerOrderManifests") (reparse-symbol formal_parameters) [1775 1797]))                          )
+                        (reparse-symbol class_member_declaration) [1718 2762])
+                    ("getPaged" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "int") (reparse-symbol formal_parameters) [2923 2933])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [2992 3004])
+                            ("customerOrderId" variable (:type "long") (reparse-symbol formal_parameters) [3026 3046]))                          )
+                        (reparse-symbol class_member_declaration) [2856 3309])
+                    ("getPagedResults" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "int") (reparse-symbol formal_parameters) [3437 3447])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [3506 3518]))                          )
+                        (reparse-symbol class_member_declaration) [3363 3747])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "long") (reparse-symbol formal_parameters) [3824 3831])
+                            ("" variable (:type "customerOrderManifest") (reparse-symbol formal_parameters) [3874 3895]))                          
+                        :type "CustomerOrderManifest")
+                        (reparse-symbol class_member_declaration) [3774 3970])
+                    ("delCustomerOrderManifest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "id") (reparse-symbol formal_parameters) [4056 4058]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4000 4114])
+                    ("getPagedPos" function (:constructor-flag t) (reparse-symbol class_member_declaration) [4176 4990]))                  
+                :type "class")
+                nil [1234 5678]))          
+    :file "CustomerOrderManifestController.java"
+    :pointmax 5679
+    :fsize 5678
+    :lastmodtime '(23533 26338 578816 893000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CustomerOrderManifestService.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.yuno.ens.common.AbstractPagingAndSortingService" include nil nil [47 106])
+            ("com.yuno.ens.common.Paged" include nil nil [107 140])
+            ("com.yuno.ens.entity.CustomerOrderManifest" include nil nil [141 190])
+            ("java.util.List" include nil nil [191 213])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [214 276])
+            ("org.springframework.data.domain.PageRequest" include nil nil [277 328])
+            ("org.springframework.stereotype.Service" include nil nil [329 375]))          
+    :file "CustomerOrderManifestService.java"
+    :pointmax 1327
+    :fsize 1326
+    :lastmodtime '(23533 23087 345897 384000)
+    :unmatched-syntax '((BRACE_BLOCK 495 . 1326) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1327) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1834) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1834) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1833) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1825) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1812) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1814) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1813) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1812) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1811) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1810) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1809) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1812) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1808) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1812) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1808) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1805) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1804) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1802) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1825) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1826) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1328) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1328) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1328) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1337) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1330) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385) (BRACE_BLOCK 495 . 1326) (GT 493 . 494) (IDENTIFIER 472 . 493) (LT 471 . 472) (IDENTIFIER 377 . 385))
+    )
+   (semanticdb-table "CustomerOrderService.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.alipay.api.AlipayApiException" include nil nil [47 88])
+            ("com.alipay.api.domain.AlipayTradePayModel" include nil nil [89 138])
+            ("com.alipay.api.response.AlipayTradePayResponse" include nil nil [139 193])
+            ("com.yuno.ens.common.AbstractPagingAndSortingService" include nil nil [194 253])
+            ("com.yuno.ens.common.Paged" include nil nil [254 287])
+            ("com.yuno.ens.entity.CustomerOrder" include nil nil [288 329])
+            ("com.yuno.ens.entity.CustomerOrder.PayStatus" include nil nil [330 381])
+            ("com.yuno.ens.entity.CustomerOrderManifest" include nil nil [382 431])
+            ("com.yuno.ens.feature.customer_order.PayCustomerOrderRequest.PaymentChannel" include nil nil [432 514])
+            ("java.math.BigDecimal" include nil nil [515 543])
+            ("java.text.SimpleDateFormat" include nil nil [544 578])
+            ("java.util.Date" include nil nil [579 601])
+            ("java.util.List" include nil nil [602 624])
+            ("java.util.Optional" include nil nil [625 651])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [652 714])
+            ("org.springframework.data.domain.PageRequest" include nil nil [715 766])
+            ("org.springframework.stereotype.Service" include nil nil [767 813]))          
+    :file "CustomerOrderService.java"
+    :pointmax 7333
+    :fsize 7332
+    :lastmodtime '(23533 18488 496600 612000)
+    :unmatched-syntax '((BRACE_BLOCK 913 . 7332) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7326) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7322) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7320) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7319) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7318) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7316) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7325) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7330) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7331) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7329) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7325) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7304) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7308) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7306) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7222) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7222) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7221) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7201) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7203) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7204) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7201) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7184) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7183) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7182) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7181) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7179) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7165) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7165) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7162) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7163) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7152) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7147) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7144) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7140) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7137) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7138) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7137) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7136) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7131) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7123) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7115) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7111) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7103) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7101) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7099) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7117) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7119) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7121) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7119) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7062) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7061) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6980) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6979) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6898) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6979) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6981) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6924) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6923) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6980) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6973) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6972) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6962) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6961) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6960) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6958) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6956) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6954) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6953) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6952) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6972) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6999) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6991) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7010) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7009) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7007) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7012) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7007) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7005) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6999) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6990) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6991) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6983) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6982) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6973) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6972) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6971) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6970) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6971) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6970) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6968) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6966) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6962) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6968) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7018) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 7022) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6930) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6930) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6925) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6914) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6913) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6910) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6905) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (RBRACE 6903 . 6904) (BRACE_BLOCK 6375 . 6901) (PAREN_BLOCK 6345 . 6374) (IDENTIFIER 6327 . 6345) (IDENTIFIER 6320 . 6326) (BRACE_BLOCK 5621 . 6301) (PAREN_BLOCK 5522 . 5620) (IDENTIFIER 5500 . 5522) (IDENTIFIER 5475 . 5499) (BRACE_BLOCK 913 . 5463) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (RBRACE 6902 . 6903) (BRACE_BLOCK 6374 . 6900) (PAREN_BLOCK 6344 . 6373) (IDENTIFIER 6326 . 6344) (IDENTIFIER 6319 . 6325) (BRACE_BLOCK 5620 . 6300) (PAREN_BLOCK 5521 . 5619) (IDENTIFIER 5499 . 5521) (IDENTIFIER 5474 . 5498) (BRACE_BLOCK 913 . 5462) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6901) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6897) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6901) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6909) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6908) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6909) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6911) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6904) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6903) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6900) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6897) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6890) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6889) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6909) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6889) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6909) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6910) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6889) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6911) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6909) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6904) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6897) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6893) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6890) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6889) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6885) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6882) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6881) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6885) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6884) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6883) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6882) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6844) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6842) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6840) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6837) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6834) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6831) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6829) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6828) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6827) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6824) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6821) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6815) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6813) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6806) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6802) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6801) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6800) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6793) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6786) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6705) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6698) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6704) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6698) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6703) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6701) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6699) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6733) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6735) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6732) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6654) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6653) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6731) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6726) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6724) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6718) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6717) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6719) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6718) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6715) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6714) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6713) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6711) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6702) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6698) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6691) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6684) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6699) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6684) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6684) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6682) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6683) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6668) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6667) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6663) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6662) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6659) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6657) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6655) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6650) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6641) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6633) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6631) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6634) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6631) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6628) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6623) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6615) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6612) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6610) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6605) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6600) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6599) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6594) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823) (BRACE_BLOCK 913 . 6585) (GT 911 . 912) (IDENTIFIER 898 . 911) (LT 897 . 898) (IDENTIFIER 815 . 823))
+    )
+   (semanticdb-table "AliPayService.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.alipay.api.AlipayApiException" include nil nil [47 88])
+            ("com.alipay.api.AlipayClient" include nil nil [89 124])
+            ("com.alipay.api.DefaultAlipayClient" include nil nil [125 167])
+            ("com.alipay.api.domain.AlipayTradeCancelModel" include nil nil [168 220])
+            ("com.alipay.api.domain.AlipayTradeCloseModel" include nil nil [221 272])
+            ("com.alipay.api.domain.AlipayTradeCreateModel" include nil nil [273 325])
+            ("com.alipay.api.domain.AlipayTradeOrderSettleModel" include nil nil [326 383])
+            ("com.alipay.api.domain.AlipayTradePayModel" include nil nil [384 433])
+            ("com.alipay.api.domain.AlipayTradePrecreateModel" include nil nil [434 489])
+            ("com.alipay.api.domain.AlipayTradeQueryModel" include nil nil [490 541])
+            ("com.alipay.api.domain.AlipayTradeRefundModel" include nil nil [542 594])
+            ("com.alipay.api.domain.OpenApiRoyaltyDetailInfoPojo" include nil nil [595 653])
+            ("com.alipay.api.request.AlipayTradeCancelRequest" include nil nil [654 709])
+            ("com.alipay.api.request.AlipayTradeCloseRequest" include nil nil [710 764])
+            ("com.alipay.api.request.AlipayTradeCreateRequest" include nil nil [765 820])
+            ("com.alipay.api.request.AlipayTradeOrderSettleRequest" include nil nil [821 881])
+            ("com.alipay.api.request.AlipayTradePayRequest" include nil nil [882 934])
+            ("com.alipay.api.request.AlipayTradePrecreateRequest" include nil nil [935 993])
+            ("com.alipay.api.request.AlipayTradeQueryRequest" include nil nil [994 1048])
+            ("com.alipay.api.request.AlipayTradeRefundRequest" include nil nil [1049 1104])
+            ("com.alipay.api.response.AlipayTradeCancelResponse" include nil nil [1105 1162])
+            ("com.alipay.api.response.AlipayTradeCloseResponse" include nil nil [1163 1219])
+            ("com.alipay.api.response.AlipayTradeCreateResponse" include nil nil [1220 1277])
+            ("com.alipay.api.response.AlipayTradeOrderSettleResponse" include nil nil [1278 1340])
+            ("com.alipay.api.response.AlipayTradePayResponse" include nil nil [1341 1395])
+            ("com.alipay.api.response.AlipayTradePrecreateResponse" include nil nil [1396 1456])
+            ("com.alipay.api.response.AlipayTradeQueryResponse" include nil nil [1457 1513])
+            ("com.alipay.api.response.AlipayTradeRefundResponse" include nil nil [1514 1571])
+            ("java.text.SimpleDateFormat" include nil nil [1572 1606])
+            ("java.util.Calendar" include nil nil [1607 1633])
+            ("java.util.List" include nil nil [1634 1656])
+            ("java.util.concurrent.ThreadLocalRandom" include nil nil [1657 1703])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [1704 1762])
+            ("org.springframework.stereotype.Service" include nil nil [1763 1809])
+            ("AliPayService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("alipayClient" variable
+                       (:typemodifiers ("private")
+                        :type "AlipayClient")
+                        (reparse-symbol class_member_declaration) [1852 1886])
+                    ("AliPayService" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serverUrl" variable (:type "String") (reparse-symbol formal_parameters) [1941 1957])
+                            ("appId" variable (:type "String") (reparse-symbol formal_parameters) [1991 2003])
+                            ("appPrivateKey" variable (:type "String") (reparse-symbol formal_parameters) [2045 2065])
+                            ("alipayPublicKey" variable (:type "String") (reparse-symbol formal_parameters) [2109 2131]))                          )
+                        (reparse-symbol class_member_declaration) [1890 2278])
+                    ("getNewOutTradeNo" function
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2282 2610])
+                    ("refundQueryByTradeNo" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [3251 3265])
+                            ("outTradeNo" variable (:type "String") (reparse-symbol formal_parameters) [3267 3284])
+                            ("outRequestNo" variable (:type "String") (reparse-symbol formal_parameters) [3286 3305]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3216 3757])
+                    ("tradeOrderSettle" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("outRequestNo" variable (:type "String") (reparse-symbol formal_parameters) [4153 4172])
+                            ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [4174 4188])
+                            ("" variable (:type "royaltyParameters") (reparse-symbol formal_parameters) [4231 4248]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4122 4733])
+                    ("tradeClose" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [5243 5257])
+                            ("outTradeNo" variable (:type "String") (reparse-symbol formal_parameters) [5259 5276]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5218 5673])
+                    ("tradeCancel" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [6383 6397])
+                            ("outTradeNo" variable (:type "String") (reparse-symbol formal_parameters) [6399 6416]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6357 6818])
+                    ("tradeRefund" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [7460 7474])
+                            ("outTradeNo" variable (:type "String") (reparse-symbol formal_parameters) [7476 7493])
+                            ("refundAmount" variable (:type "String") (reparse-symbol formal_parameters) [7495 7514]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7434 7966])
+                    ("tradePreCreate" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("bizModel" variable (:type "AlipayTradePrecreateModel") (reparse-symbol formal_parameters) [8416 8450]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8387 8761])
+                    ("tradeCreate" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("bizModel" variable (:type "AlipayTradeCreateModel") (reparse-symbol formal_parameters) [9145 9176]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9119 9478])
+                    ("tradePay" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("bizModel" variable (:type "AlipayTradePayModel") (reparse-symbol formal_parameters) [9866 9894]))                          
+                        :type "AlipayTradePayResponse")
+                        (reparse-symbol class_member_declaration) [9827 10157])
+                    ("tradeQuery" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("outTradeNo" variable (:type "String") (reparse-symbol formal_parameters) [10785 10802])
+                            ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [10804 10818]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10760 11215]))                  
+                :type "class")
+                nil [1820 11217]))          
+    :file "AliPayService.java"
+    :pointmax 11218
+    :fsize 14189
+    :lastmodtime '(23521 2190 372838 422000)
+    :unmatched-syntax '((GT 4229 . 4230) (IDENTIFIER 4196 . 4200) (LT 4200 . 4201) (IDENTIFIER 2073 . 2079) (PAREN_BLOCK 2079 . 2108) (IDENTIFIER 2011 . 2017) (PAREN_BLOCK 2017 . 2044) (IDENTIFIER 1965 . 1971) (PAREN_BLOCK 1971 . 1990) (IDENTIFIER 1911 . 1917) (PAREN_BLOCK 1917 . 1940) (IDENTIFIER 1811 . 1819))
+    )
+   (semanticdb-table "AlipayController.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.alipay.api.AlipayApiException" include nil nil [47 88])
+            ("com.alipay.api.domain.AlipayTradeCreateModel" include nil nil [89 141])
+            ("com.alipay.api.domain.AlipayTradePayModel" include nil nil [142 191])
+            ("com.alipay.api.domain.AlipayTradePrecreateModel" include nil nil [192 247])
+            ("com.alipay.api.response.AlipayTradePayResponse" include nil nil [248 302])
+            ("com.fasterxml.jackson.core.JsonProcessingException" include nil nil [303 361])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [362 424])
+            ("org.springframework.web.bind.annotation.GetMapping" include nil nil [425 483])
+            ("org.springframework.web.bind.annotation.PostMapping" include nil nil [484 543])
+            ("org.springframework.web.bind.annotation.RequestBody" include nil nil [544 603])
+            ("org.springframework.web.bind.annotation.RequestParam" include nil nil [604 664])
+            ("AlipayController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("pay" function
+                       (:throws ("JsonProcessingException" "AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "alipayTradePayModel") (reparse-symbol formal_parameters) [887 906]))                          
+                        :type "AlipayTradePayResponse")
+                        (reparse-symbol class_member_declaration) [820 1026])
+                    ("pay" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("outTradeNo" variable (:type "String") (reparse-symbol formal_parameters) [1109 1126])
+                            ("tradeNo" variable (:type "String") (reparse-symbol formal_parameters) [1166 1180]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1059 1380])
+                    ("preCreate" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "alipayTradePrecreateModel") (reparse-symbol formal_parameters) [1481 1506]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1418 1613])
+                    ("create" function
+                       (:throws ("AlipayApiException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "alipayTradeCreateModel") (reparse-symbol formal_parameters) [1885 1907]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1828 2008]))                  
+                :type "class")
+                nil [712 2010]))          
+    :file "AlipayController.java"
+    :pointmax 2011
+    :fsize 2076
+    :lastmodtime '(23521 2190 372838 422000)
+    :unmatched-syntax '((STRING_LITERAL 1810 . 1824) (STRING_LITERAL 1397 . 1414) (IDENTIFIER 1134 . 1147) (PAREN_BLOCK 1147 . 1165) (IDENTIFIER 1077 . 1090) (PAREN_BLOCK 1090 . 1108) (STRING_LITERAL 1042 . 1055) (STRING_LITERAL 805 . 816) (IDENTIFIER 747 . 757) (IDENTIFIER 774 . 787) (SEMICOLON 787 . 788))
+    )
+   (semanticdb-table "PayCustomerOrderRequest.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("javax.persistence.EnumType" include nil nil [47 81])
+            ("javax.persistence.Enumerated" include nil nil [82 118])
+            ("lombok.Data" include nil nil [119 138])
+            ("PayCustomerOrderRequest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("customerOrderId" variable
+                       (:typemodifiers ("private")
+                        :type "Long")
+                        (reparse-symbol class_member_declaration) [188 217])
+                    ("authCode" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [220 244])
+                    ("payMethod" variable
+                       (:typemodifiers ("private")
+                        :type "PaymentChannel")
+                        (reparse-symbol class_member_declaration) [279 312])
+                    ("offlinePayMethod" variable
+                       (:typemodifiers ("private")
+                        :type "OfflinePaymentChannel")
+                        (reparse-symbol class_member_declaration) [347 394]))                  
+                :type "class")
+                nil [146 548]))          
+    :file "PayCustomerOrderRequest.java"
+    :pointmax 549
+    :fsize 548
+    :lastmodtime '(23528 60455 788691 163000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PayCustomerOrderResponse.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.feature.customer_order" package nil nil [1 45])
+            ("com.yuno.ens.entity.CustomerOrder" include nil nil [47 88])
+            ("javax.persistence.EnumType" include nil nil [89 123])
+            ("javax.persistence.Enumerated" include nil nil [124 160])
+            ("lombok.Data" include nil nil [161 180])
+            ("PayCustomerOrderResponse" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("paidResult" variable
+                       (:typemodifiers ("private")
+                        :type "PaidResult")
+                        (reparse-symbol class_member_declaration) [261 291])
+                    ("paidAmount" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [294 320])
+                    ("customerOrder" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrder")
+                        (reparse-symbol class_member_declaration) [323 359])
+                    ("rawResponse" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [362 389]))                  
+                :type "class")
+                nil [188 455]))          
+    :file "PayCustomerOrderResponse.java"
+    :pointmax 456
+    :fsize 455
+    :lastmodtime '(23528 20034 121656 183000)
+    :unmatched-syntax '((IDENTIFIER 182 . 187))
+    )
+    )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!feature!customer_order!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

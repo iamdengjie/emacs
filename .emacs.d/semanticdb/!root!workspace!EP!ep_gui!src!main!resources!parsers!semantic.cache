@@ -1,0 +1,36 @@
+;; Object parsers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "parsers/"
+  :tables (list 
+   (semanticdb-table "httpRequestActionParser.groovy"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ep.policy" package nil nil [1 23])
+            ("java.util.Map" include nil nil [25 46])
+            ("com.ep.models.InputParameter" include nil nil [47 83])
+            ("com.jayway.jsonpath.Configuration" include nil nil [84 125])
+            ("com.jayway.jsonpath.JsonPath" include nil nil [126 162])
+            ("DefaultParser" type
+               (:typemodifiers ("public")
+                :interfaces ("ConditionParser")
+                :members 
+                  ( ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("parameter" variable (:type "String") (reparse-symbol formal_parameters) [246 262])
+                            ("model" variable (:type "InputParameter") (reparse-symbol formal_parameters) [264 284]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [224 1113]))                  
+                :type "class")
+                nil [164 1115]))          
+    :file "httpRequestActionParser.groovy"
+    :pointmax 1116
+    :fsize 1115
+    :lastmodtime '(23503 34439 771082 696000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!EP!ep_gui!src!main!resources!parsers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

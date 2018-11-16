@@ -1,0 +1,46 @@
+;; Object service/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "service/"
+  :tables (list 
+   (semanticdb-table "BookService.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.jasmine.demo.service" package nil nil [1 34])
+            ("com.jasmine.demo.entity.Book" include nil nil [36 72])
+            ("com.jasmine.demo.repository.BookRepository" include nil nil [73 123])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [124 186])
+            ("org.springframework.stereotype.Service" include nil nil [187 233])
+            ("BookService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("save" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("book" variable (:type "Book") (reparse-symbol formal_parameters) [334 343]))                          
+                        :type "Book")
+                        (reparse-symbol class_member_declaration) [317 384])
+                    ("batchSave" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "books") (reparse-symbol formal_parameters) [435 440]))                          )
+                        (reparse-symbol class_member_declaration) [410 482])
+                    ("get" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "long") (reparse-symbol formal_parameters) [502 509]))                          
+                        :type "Book")
+                        (reparse-symbol class_member_declaration) [486 551])
+                    ("getAll" function (:constructor-flag t) (reparse-symbol class_member_declaration) [577 624]))                  
+                :type "class")
+                nil [244 626]))          
+    :file "BookService.java"
+    :pointmax 627
+    :fsize 626
+    :lastmodtime '(23498 49472 439093 162000)
+    :unmatched-syntax '((GT 575 . 576) (PUBLIC 555 . 561) (LT 570 . 571) (GT 433 . 434) (IDENTIFIER 420 . 428) (LT 428 . 429) (GT 408 . 409) (PUBLIC 388 . 394) (LT 403 . 404) (IDENTIFIER 274 . 284) (IDENTIFIER 302 . 312) (SEMICOLON 312 . 313) (IDENTIFIER 235 . 243))
+    )
+   )
+  :file "!root!workspace!book-library!src!main!java!com!jasmine!demo!service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,58 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "AppConfig.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.jasmine.demo" package nil nil [1 26])
+            ("javax.sql.DataSource" include nil nil [28 56])
+            ("org.h2.Driver" include nil nil [57 78])
+            ("org.springframework.context.annotation.Bean" include nil nil [79 130])
+            ("org.springframework.context.annotation.ComponentScan" include nil nil [131 191])
+            ("org.springframework.context.annotation.Configuration" include nil nil [192 252])
+            ("org.springframework.jdbc.datasource.DriverManagerDataSource" include nil nil [253 320])
+            ("AppConfig" type
+               (:typemodifiers ("public")
+                :type "class")
+                nil [352 378]))          
+    :file "AppConfig.java"
+    :pointmax 379
+    :fsize 378
+    :lastmodtime '(23498 49472 438093 113000)
+    :unmatched-syntax '((IDENTIFIER 337 . 351) (IDENTIFIER 322 . 336))
+    )
+   (semanticdb-table "AppInitializer.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.jasmine.demo" package nil nil [1 26])
+            ("javax.servlet.ServletContext" include nil nil [28 64])
+            ("javax.servlet.ServletException" include nil nil [65 103])
+            ("org.springframework.boot.autoconfigure.SpringBootApplication" include nil nil [104 172])
+            ("org.springframework.web.WebApplicationInitializer" include nil nil [173 230])
+            ("org.springframework.web.context.support.AnnotationConfigWebApplicationContext" include nil nil [231 316])
+            ("org.springframework.web.servlet.DispatcherServlet" include nil nil [317 374])
+            ("AppInitializer" type
+               (:typemodifiers ("public")
+                :interfaces ("WebApplicationInitializer")
+                :members 
+                  ( ("onStartup" function
+                       (:throws ("ServletException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("servletContext" variable (:type "ServletContext") (reparse-symbol formal_parameters) [503 532]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [481 910]))                  
+                :type "class")
+                nil [399 912]))          
+    :file "AppInitializer.java"
+    :pointmax 912
+    :fsize 911
+    :lastmodtime '(23498 49472 438093 113000)
+    :unmatched-syntax '((IDENTIFIER 376 . 398))
+    )
+   )
+  :file "!root!workspace!book-library!src!main!java!com!jasmine!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

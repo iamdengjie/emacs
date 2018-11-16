@@ -1,0 +1,145 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables (list 
+   (semanticdb-table "PolicyServiceImpl.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("ocpm.ep.services" package nil nil [1 26])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [27 78])
+            ("com.jayway.jsonpath.JsonPath" include nil nil [79 115])
+            ("com.jayway.jsonpath.PathNotFoundException" include nil nil [116 165])
+            ("org.springframework.scheduling.annotation.Async" include nil nil [166 221])
+            ("java.util.HashMap" include nil nil [224 249])
+            ("java.util.List" include nil nil [250 272])
+            ("java.util.Map" include nil nil [273 294])
+            ("ocpm.ep.policytrace.PolicyTrace" include nil nil [296 335])
+            ("ocpm.ep.policytrace.PolicyTraceController" include nil nil [336 385])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [386 448])
+            ("ocpm.ep.models.*" include nil nil [449 473])
+            ("ocpm.ep.engine.*" include nil nil [474 498])
+            ("ocpm.ep.mybatis.domain.RestfulConfig" include nil nil [499 543])
+            ("ocpm.ep.mybatis.mapper.*" include nil nil [544 576])
+            ("org.slf4j.Logger" include nil nil [577 601])
+            ("org.slf4j.LoggerFactory" include nil nil [602 633])
+            ("org.springframework.stereotype.Service" include nil nil [634 680])
+            ("ocpm.ep.datasources.ldap.LdapManager" include nil nil [681 725])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [727 772])
+            ("PolicyServiceImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("PolicyService")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [845 927])
+                    ("ldapManager" variable
+                       (:typemodifiers ("private")
+                        :type "LdapManager")
+                        (reparse-symbol class_member_declaration) [948 980])
+                    ("restfulConfigMapper" variable
+                       (:typemodifiers ("private")
+                        :type "RestfulConfigMapper")
+                        (reparse-symbol class_member_declaration) [1005 1053])
+                    ("policyTraceController" variable
+                       (:typemodifiers ("private")
+                        :type "PolicyTraceController")
+                        (reparse-symbol class_member_declaration) [1068 1120])
+                    ("policyEngine" variable
+                       (:typemodifiers ("private")
+                        :type "PolicyEngine")
+                        (reparse-symbol class_member_declaration) [1145 1179])
+                    ("globalConfig" variable
+                       (:typemodifiers ("private")
+                        :type "GlobalConfig")
+                        (reparse-symbol class_member_declaration) [1200 1234])
+                    ("request" variable
+                       (:typemodifiers ("private")
+                        :type "HttpServletRequest")
+                        (reparse-symbol class_member_declaration) [1249 1284])
+                    ("restfulClient" variable
+                       (:typemodifiers ("private")
+                        :type "RestfulClient")
+                        (reparse-symbol class_member_declaration) [1305 1341])
+                    ("mapper" variable
+                       (:typemodifiers ("private")
+                        :type "ObjectMapper")
+                        (reparse-symbol class_member_declaration) [1344 1393])
+                    ("reconfigure" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1630 1816])
+                    ("reconfigureGlobalConfig" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1819 1930])
+                    ("queryLdap" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("policyContext" variable (:type "PolicyContext") (reparse-symbol formal_parameters) [1967 1994])
+                            ("keyword" variable (:type "String") (reparse-symbol formal_parameters) [1996 2010])
+                            ("target" variable (:type "String") (reparse-symbol formal_parameters) [2012 2025])
+                            ("timeout" variable (:type "Long") (reparse-symbol formal_parameters) [2027 2039])
+                            ("policytrace" variable (:type "PolicyTrace") (reparse-symbol formal_parameters) [2040 2063]))                          
+                        :type "PolicyContext")
+                        (reparse-symbol class_member_declaration) [1936 2872])
+                    ("queryDatasource" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("policyContext" variable (:type "PolicyContext") (reparse-symbol formal_parameters) [2915 2942])
+                            ("policytrace" variable (:type "PolicyTrace") (reparse-symbol formal_parameters) [2943 2966]))                          
+                        :type "PolicyContext")
+                        (reparse-symbol class_member_declaration) [2878 5601])
+                    ("initPolicyContext" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [5650 5656])
+                            ("" variable (:type "request") (reparse-symbol formal_parameters) [5666 5673]))                          
+                        :type "PolicyContext")
+                        (reparse-symbol class_member_declaration) [5607 6035])
+                    ("evaluate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [6077 6083])
+                            ("" variable (:type "request") (reparse-symbol formal_parameters) [6093 6100]))                          
+                        :type "PolicyResponse")
+                        (reparse-symbol class_member_declaration) [6042 8181])
+                    ("sendHttpNotification" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("policyContext" variable (:type "PolicyContext") (reparse-symbol formal_parameters) [8231 8258]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8198 8701])
+                    ("getRequestInfo" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8704 9418]))                  
+                :type "class")
+                nil [783 9421]))          
+    :file "PolicyServiceImpl.java"
+    :pointmax 9422
+    :fsize 9421
+    :lastmodtime '(23507 63139 401381 340000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PolicyResponseImpl.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("ocpm.ep.services" package nil nil [1 26])
+            ("java.util.HashMap" include nil nil [28 53])
+            ("java.util.Map" include nil nil [54 75])
+            ("java.util.TreeMap" include nil nil [76 101])
+            ("com.jayway.jsonpath.JsonPath" include nil nil [103 139])
+            ("ocpm.ep.models.PolicyContext" include nil nil [141 177])
+            ("ocpm.ep.mybatis.domain.RestfulConfig" include nil nil [178 222]))          
+    :file "PolicyResponseImpl.java"
+    :pointmax 2153
+    :fsize 2152
+    :lastmodtime '(23504 34645 616407 57000)
+    :unmatched-syntax '((BRACE_BLOCK 297 . 2152) (GT 295 . 296) (IDENTIFIER 282 . 295) (PUBLIC 224 . 230) (LT 281 . 282) (BRACE_BLOCK 297 . 2151) (GT 295 . 296) (IDENTIFIER 282 . 295) (PUBLIC 224 . 230) (LT 281 . 282))
+    )
+   )
+  :file "!root!workspace!EP!ep_server!src!main!java!ocpm!ep!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

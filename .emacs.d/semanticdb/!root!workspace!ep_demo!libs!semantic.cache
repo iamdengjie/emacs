@@ -1,0 +1,279 @@
+;; Object libs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libs/"
+  :tables (list 
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.shortcuts" include nil nil [1 36])
+            ("libs.serializers" include nil nil [38 68])
+            ("libs.models" include nil nil [69 94])
+            ("django.views.generic" include nil nil [95 132])
+            ("rest_framework" include nil nil [133 227])
+            ("rest_framework.views" include nil nil [228 268])
+            ("rest_framework.response" include nil nil [269 313])
+            ("urllib" include nil nil [314 352])
+            ("json" include nil nil [314 352])
+            ("urllib2" include nil nil [314 352])
+            ("requests" include nil nil [314 352])
+            ("django.http" include nil nil [353 420])
+            ("django.core.exceptions" include nil nil [421 471])
+            ("django.views.decorators.csrf" include nil nil [472 524])
+            ("django.utils.decorators" include nil nil [525 577])
+            ("threading" include nil nil [579 595])
+            ("BikeListView" type
+               (:superclasses ("generics.ListCreateAPIView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [876 905])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [910 943]))                  
+                :type "class")
+                nil [824 944])
+            ("BikeDetailListView" type
+               (:superclasses ("generics.ListAPIView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [997 1026])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [1031 1064]))                  
+                :type "class")
+                nil [945 1065])
+            ("BikeView" type
+               (:superclasses ("generics.RetrieveUpdateDestroyAPIView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [1125 1154])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [1159 1192]))                  
+                :type "class")
+                nil [1066 1193])
+            ("BikeBulkView" type
+               (:superclasses ("ListBulkCreateUpdateDestroyAPIView")
+                :members 
+                  ( ("queryset" variable nil (reparse-symbol indented_block_body) [1254 1283])
+                    ("serializer_class" variable nil (reparse-symbol indented_block_body) [1288 1321])
+                    ("perform_create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1346 1350])
+                            ("serializer" variable nil (reparse-symbol function_parameters) [1352 1362]))                          )
+                        (reparse-symbol indented_block_body) [1327 1427]))                  
+                :type "class")
+                nil [1194 1427])
+            ("InitialDevicesView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("listUrl" variable nil (reparse-symbol indented_block_body) [1464 1522])
+                    ("actUrl" variable nil (reparse-symbol indented_block_body) [1527 1572])
+                    ("regUrl" variable nil (reparse-symbol indented_block_body) [1577 1638])
+                    ("getRemoteData" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("url" variable nil (reparse-symbol function_parameters) [1681 1684])
+                            ("headerList" variable nil (reparse-symbol function_parameters) [1686 1696]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1644 2094])
+                    ("registerDevices" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2099 2241])
+                    ("initialBikes" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2246 2913])
+                    ("refreshBikes" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2919 3984])
+                    ("changeBike" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("deviceId" variable nil (reparse-symbol function_parameters) [4022 4030])
+                            ("action" variable nil (reparse-symbol function_parameters) [4032 4038]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3989 4213])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4226 4230])
+                            ("request" variable nil (reparse-symbol function_parameters) [4232 4239])
+                            ("args" variable nil (reparse-symbol function_parameters) [4241 4246])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4248 4256]))                          )
+                        (reparse-symbol indented_block_body) [4218 4523]))                  
+                :type "class")
+                nil [1428 4523])
+            ("RefreshDevicesView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4568 4572])
+                            ("request" variable nil (reparse-symbol function_parameters) [4574 4581])
+                            ("args" variable nil (reparse-symbol function_parameters) [4583 4588])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4590 4598]))                          )
+                        (reparse-symbol indented_block_body) [4560 4865]))                  
+                :type "class")
+                nil [4524 4865])
+            ("RegisterDevicesView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4911 4915])
+                            ("request" variable nil (reparse-symbol function_parameters) [4917 4924])
+                            ("args" variable nil (reparse-symbol function_parameters) [4926 4931])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4933 4941]))                          )
+                        (reparse-symbol indented_block_body) [4903 5211]))                  
+                :type "class")
+                nil [4866 5211])
+            ("ChangeDeviceView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5254 5258])
+                            ("request" variable nil (reparse-symbol function_parameters) [5260 5267])
+                            ("args" variable nil (reparse-symbol function_parameters) [5269 5274])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5276 5284]))                          )
+                        (reparse-symbol indented_block_body) [5246 5658]))                  
+                :type "class")
+                nil [5212 5658])
+            ("asyncNoticeEcb" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5711 5715]))                          )
+                        (reparse-symbol indented_block_body) [5703 5843]))                  
+                :type "class")
+                nil [5659 5843])
+            ("DemoContent" type
+               (:members 
+                  ( ("policyUrl" variable nil (reparse-symbol indented_block_body) [5869 5932])
+                    ("policyConfigUrl" variable nil (reparse-symbol indented_block_body) [5937 5990])
+                    ("syncContent" variable nil (reparse-symbol indented_block_body) [5995 6012])
+                    ("aSyncContent" variable nil (reparse-symbol indented_block_body) [6017 6034]))                  
+                :type "class")
+                nil [5844 6035])
+            ("EcbRequestView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6080 6084])
+                            ("request" variable nil (reparse-symbol function_parameters) [6086 6093])
+                            ("args" variable nil (reparse-symbol function_parameters) [6095 6100])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6102 6110]))                          )
+                        (reparse-symbol indented_block_body) [6071 6574]))                  
+                :type "class")
+                nil [6036 6574])
+            ("EcbNoticeView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6618 6622])
+                            ("request" variable nil (reparse-symbol function_parameters) [6624 6631])
+                            ("format" variable nil (reparse-symbol function_parameters) [6633 6639]))                          )
+                        (reparse-symbol indented_block_body) [6609 7069]))                  
+                :type "class")
+                nil [6575 7069])
+            ("EcbAsyncResponseView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7120 7124])
+                            ("request" variable nil (reparse-symbol function_parameters) [7126 7133])
+                            ("format" variable nil (reparse-symbol function_parameters) [7135 7141]))                          )
+                        (reparse-symbol indented_block_body) [7111 7260]))                  
+                :type "class")
+                nil [7070 7260])
+            ("UserCaseViewP1" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7305 7309])
+                            ("request" variable nil (reparse-symbol function_parameters) [7311 7318])
+                            ("format" variable nil (reparse-symbol function_parameters) [7320 7326]))                          )
+                        (reparse-symbol indented_block_body) [7296 7543]))                  
+                :type "class")
+                nil [7261 7543])
+            ("UserCaseViewP2" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7588 7592])
+                            ("request" variable nil (reparse-symbol function_parameters) [7594 7601])
+                            ("format" variable nil (reparse-symbol function_parameters) [7603 7609]))                          )
+                        (reparse-symbol indented_block_body) [7579 7846]))                  
+                :type "class")
+                nil [7544 7846])
+            ("ReportPlatformView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7895 7899])
+                            ("request" variable nil (reparse-symbol function_parameters) [7901 7908])
+                            ("format" variable nil (reparse-symbol function_parameters) [7910 7916]))                          )
+                        (reparse-symbol indented_block_body) [7886 8086]))                  
+                :type "class")
+                nil [7847 8086])
+            ("SecurityPlatformView" type
+               (:superclasses ("APIView")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8137 8141])
+                            ("request" variable nil (reparse-symbol function_parameters) [8143 8150])
+                            ("format" variable nil (reparse-symbol function_parameters) [8152 8158]))                          )
+                        (reparse-symbol indented_block_body) [8128 10300]))                  
+                :type "class")
+                nil [8087 10300]))          
+    :file "views.py"
+    :pointmax 9037
+    :fsize 10302
+    :lastmodtime '(23512 7532 862223 765000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serializers.py"
+    :file "serializers.py"
+    :fsize 472
+    :lastmodtime '(23504 35093 791668 964000)
+    )
+   (semanticdb-table "models.py"
+    :file "models.py"
+    :fsize 395
+    :lastmodtime '(23504 35093 792752 308000)
+    )
+   (semanticdb-table "urls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.conf.urls" include nil nil [1 52])
+            ("libs.views" include nil nil [54 78])
+            ("urlpatterns" variable nil nil [80 1084]))          
+    :file "urls.py"
+    :pointmax 1085
+    :fsize 1084
+    :lastmodtime '(23511 63351 688568 447000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ep_demo!libs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

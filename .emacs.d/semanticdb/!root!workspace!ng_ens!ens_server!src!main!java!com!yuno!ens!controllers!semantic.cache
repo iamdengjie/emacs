@@ -1,0 +1,135 @@
+;; Object controllers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "controllers/"
+  :tables (list 
+   (semanticdb-table "WebDataController.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("com.yuno.ens.controllers" package nil nil [1 34])
+            ("com.yuno.ens.entity.CustomerOrder" include nil nil [36 77])
+            ("com.yuno.ens.entity.CustomerOrderManifest" include nil nil [78 127])
+            ("com.yuno.ens.entity.Product" include nil nil [128 163])
+            ("com.yuno.ens.entity.StoreManifest" include nil nil [164 205])
+            ("com.yuno.ens.entity.StoreManifestCategory" include nil nil [206 255])
+            ("com.yuno.ens.entity.User" include nil nil [256 288])
+            ("com.yuno.ens.feature.customer_order.CustomerOrderManager" include nil nil [289 353])
+            ("com.yuno.ens.feature.customer_order.CustomerOrderManifestRepository" include nil nil [354 429])
+            ("com.yuno.ens.feature.customer_order.CustomerOrderRepository" include nil nil [430 497])
+            ("com.yuno.ens.feature.department.DepartmentRepository" include nil nil [498 558])
+            ("com.yuno.ens.feature.payment.PaymentRequest" include nil nil [559 610])
+            ("com.yuno.ens.feature.payment.PaymentResponse" include nil nil [611 663])
+            ("com.yuno.ens.feature.product.ProductRepository" include nil nil [664 718])
+            ("com.yuno.ens.feature.store_manifest.StoreManifestRepository" include nil nil [719 786])
+            ("com.yuno.ens.feature.store_manifest_category.StoreManifestCategoryRepository" include nil nil [787 871])
+            ("com.yuno.ens.feature.user.UserRepository" include nil nil [872 920])
+            ("java.util.HashMap" include nil nil [921 946])
+            ("java.util.List" include nil nil [947 969])
+            ("java.util.Map" include nil nil [970 991])
+            ("org.slf4j.Logger" include nil nil [992 1016])
+            ("org.slf4j.LoggerFactory" include nil nil [1017 1048])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [1049 1111])
+            ("org.springframework.data.domain.PageRequest" include nil nil [1112 1163])
+            ("org.springframework.data.domain.Sort" include nil nil [1164 1208])
+            ("org.springframework.ui.Model" include nil nil [1209 1245])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [1246 1306])
+            ("org.springframework.web.bind.annotation.RequestBody" include nil nil [1307 1366])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [1367 1429])
+            ("org.springframework.web.bind.annotation.RequestMethod" include nil nil [1430 1491])
+            ("org.springframework.web.bind.annotation.RequestParam" include nil nil [1492 1552])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [1553 1615])
+            ("java.util.Optional" include nil nil [1617 1643])
+            ("WebDataController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1721 1801])
+                    ("customerOrderManager" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrderManager")
+                        (reparse-symbol class_member_declaration) [2058 2108])
+                    ("customerOrderRepository" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrderRepository")
+                        (reparse-symbol class_member_declaration) [2127 2183])
+                    ("customerOrderManifestRepository" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerOrderManifestRepository")
+                        (reparse-symbol class_member_declaration) [2200 2272])
+                    ("greeting" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2302 2381])
+                    ("greeting" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("model" variable (:type "Model") (reparse-symbol formal_parameters) [2435 2446]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2412 2546])
+                    ("login" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("username" variable (:type "String") (reparse-symbol formal_parameters) [2674 2689]))                          )
+                        (reparse-symbol class_member_declaration) [2642 2823])
+                    ("getPagedStoreManifests" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "deptId") (reparse-symbol formal_parameters) [3139 3145]))                          )
+                        (reparse-symbol class_member_declaration) [3090 3413])
+                    ("addCustomerOrderManifest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "customerOrderManifest") (reparse-symbol formal_parameters) [3731 3752]))                          
+                        :type "CustomerOrderManifest")
+                        (reparse-symbol class_member_declaration) [3635 3926])
+                    ("addCustomerOrderManifest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "customerOrderManifests") (reparse-symbol formal_parameters) [4164 4186]))                          )
+                        (reparse-symbol class_member_declaration) [4091 5735])
+                    ("getPagedCustomerOrderContent" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "int") (reparse-symbol formal_parameters) [5976 5986])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [6045 6057])
+                            ("" variable (:type "id") (reparse-symbol formal_parameters) [6078 6080]))                          )
+                        (reparse-symbol class_member_declaration) [5889 6703])
+                    ("getPagedCustomerOrderManifests" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("offset" variable (:type "int") (reparse-symbol formal_parameters) [6943 6953])
+                            ("pageSize" variable (:type "int") (reparse-symbol formal_parameters) [7012 7024]))                          )
+                        (reparse-symbol class_member_declaration) [6854 7649])
+                    ("updCustomerOrderManifest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "id") (reparse-symbol formal_parameters) [7851 7853])
+                            ("" variable (:type "customerOrderManifest") (reparse-symbol formal_parameters) [7896 7917]))                          
+                        :type "CustomerOrderManifest")
+                        (reparse-symbol class_member_declaration) [7778 8091])
+                    ("delCustomerOrderManifest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "id") (reparse-symbol formal_parameters) [8281 8283]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8223 8364])
+                    ("payCustomerOrder" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "request") (reparse-symbol formal_parameters) [8564 8571]))                          
+                        :type "PaymentResponse")
+                        (reparse-symbol class_member_declaration) [8496 8637]))                  
+                :type "class")
+                nil [1686 8640]))          
+    :file "WebDataController.java"
+    :pointmax 8641
+    :fsize 8640
+    :lastmodtime '(23520 26818 749717 225000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!root!workspace!ng_ens!ens_server!src!main!java!com!yuno!ens!controllers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
